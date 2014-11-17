@@ -1,0 +1,355 @@
+format-version: 1.4
+ontology: conf_information
+
+[Term]
+id: CONF:0000000
+name: confidence information
+def: "An information about the confidence in an assertion." [Bgee:draft]
+
+[Term]
+id: CONF:0000028
+name: confidence level
+def: "A confidence information representing the different levels of confidence, used to generate other confidence information terms." [Bgee:draft]
+is_a: CONF:0000000 ! confidence information
+
+[Term]
+id: CONF:0000029
+name: high confidence level
+def: "A confidence level representing a high trust in an evidence." [Bgee:draft]
+is_a: CONF:0000028 ! confidence level
+disjoint_from: CONF:0000030 ! medium confidence level
+disjoint_from: CONF:0000031 ! low confidence level
+
+[Term]
+id: CONF:0000030
+name: medium confidence level
+def: "A confidence level representing a moderate trust in an evidence." [Bgee:draft]
+is_a: CONF:0000028 ! confidence level
+disjoint_from: CONF:0000029 ! high confidence level
+disjoint_from: CONF:0000031 ! low confidence level
+
+[Term]
+id: CONF:0000031
+name: low confidence level
+def: "A confidence level representing an absence of trust in an evidence." [Bgee:draft]
+is_a: CONF:0000028 ! confidence level
+disjoint_from: CONF:0000030 ! medium confidence level
+disjoint_from: CONF:0000029 ! high confidence level
+
+[Term]
+id: CONF:0000032
+name: evidence concordance
+def: "A confidence information representing the concordance between several evidence lines, used to generate other confidence information terms." [Bgee:draft]
+is_a: CONF:0000000 ! confidence information
+
+[Term]
+id: CONF:0000033
+name: congruent
+def: "An evidence concordance for evidence lines that are congruent." [Bgee:draft]
+is_a: CONF:0000032 ! evidence concordance
+disjoint_from: CONF:0000034 ! conflicting
+
+[Term]
+id: CONF:0000034
+name: conflicting
+def: "An evidence concordance for evidence lines that are conflicting." [Bgee:draft]
+is_a: CONF:0000032 ! evidence concordance
+disjoint_from: CONF:0000033 ! congruent
+
+[Term]
+id: CONF:0000035
+name: strongly conflicting
+def: "A conflicting concordance for evidence lines that are strongly conflicting." [Bgee:draft]
+is_a: CONF:0000034 ! conflicting
+disjoint_from: CONF:0000036 ! weakly conflicting
+
+[Term]
+id: CONF:0000036
+name: weakly conflicting
+def: "A conflicting concordance for evidence lines that are weakly conflicting." [Bgee:draft]
+is_a: CONF:0000034 ! conflicting
+disjoint_from: CONF:0000035 ! strongly conflicting
+
+[Term]
+id: CONF:0000037
+name: same type
+def: "An evidence concordance for evidence lines that are from a same type." [Bgee:draft]
+is_a: CONF:0000032 ! evidence concordance
+disjoint_from: CONF:0000038 ! different type
+
+[Term]
+id: CONF:0000038
+name: different type
+def: "An evidence concordance for evidence lines that are from different types." [Bgee:draft]
+is_a: CONF:0000032 ! evidence concordance
+disjoint_from: CONF:0000037 ! same type
+
+[Term]
+id: CONF:0000001
+name: confidence from single evidence
+def: "A confidence information about an assertion, defined from a single evidence." [Bgee:draft]
+is_a: CONF:0000000 ! confidence information
+disjoint_from: CONF:0000002 ! confidence from multiple evidence lines
+
+[Term]
+id: CONF:0000002
+name: confidence from multiple evidence lines
+def: "A confidence information about an assertion, defined from a set of evidence lines." [Bgee:draft]
+is_a: CONF:0000000 ! confidence information
+disjoint_from: CONF:0000001 ! confidence from single evidence
+
+[Term]
+id: CONF:0000039
+name: rejected
+def: "A confidence information related to assertions that has been rejected, for instance, following paper retraction, author misinterpretation, or curator misinterpretation." [Bgee:draft]
+comment: When results are retracted, associated annotations are often removed. Consequently, end-users might not be aware that the result was annotated. Annotating an assertion with this confidence term allows to keep the information available. Such assertions should not infer with aggregation of multiple evidence lines to generate a confidence level from the branch CONF:0000002 "confidence from multiple evidence lines". This is different from negative annotations, used to negate the interpretation of an annotation. 
+is_a: CONF:0000001 ! confidence from single evidence
+disjoint_from: CONF:0000003 ! high confidence assertion from single evidence
+disjoint_from: CONF:0000004 ! medium confidence assertion from single evidence
+disjoint_from: CONF:0000005 ! low confidence assertion from single evidence
+
+[Term]
+id: CONF:0000003
+name: high confidence assertion from single evidence
+def: "A confidence information related to assertions supported by a highly reliable evidence." [Bgee:draft]
+is_a: CONF:0000001 ! confidence from single evidence
+synonym: "gold quality" EXACT [neXtProt]
+intersection_of: CONF:0000001 ! confidence from single evidence
+intersection_of: CONF:0000029 ! high confidence level
+disjoint_from: CONF:0000004 ! medium confidence assertion from single evidence
+disjoint_from: CONF:0000005 ! low confidence assertion from single evidence
+disjoint_from: CONF:0000039 ! rejected
+
+[Term]
+id: CONF:0000004
+name: medium confidence assertion from single evidence
+def: "A confidence information related to assertions supported by a moderately trusted evidence." [Bgee:draft]
+is_a: CONF:0000001 ! confidence from single evidence
+synonym: "silver quality" EXACT [neXtProt]
+intersection_of: CONF:0000001 ! confidence from single evidence
+intersection_of: CONF:0000030 ! medium confidence level
+disjoint_from: CONF:0000003 ! high confidence assertion from single evidence
+disjoint_from: CONF:0000005 ! low confidence assertion from single evidence
+disjoint_from: CONF:0000039 ! rejected
+
+[Term]
+id: CONF:0000005
+name: low confidence assertion from single evidence
+def: "A confidence information related to assertions supported by not-trusted evidence." [Bgee:draft]
+is_a: CONF:0000001 ! confidence from single evidence
+synonym: "bronze quality" EXACT [neXtProt]
+intersection_of: CONF:0000001 ! confidence from single evidence
+intersection_of: CONF:0000031 ! low confidence level
+disjoint_from: CONF:0000003 ! high confidence assertion from single evidence
+disjoint_from: CONF:0000004 ! medium confidence assertion from single evidence
+disjoint_from: CONF:0000039 ! rejected
+
+[Term]
+id: CONF:0000006
+name: multiple evidence lines of same type
+def: "A confidence from multiple evidence lines, all using a same type." [Bgee:draft]
+is_a: CONF:0000002 ! confidence from multiple evidence lines
+intersection_of: CONF:0000002 ! confidence from multiple evidence lines
+intersection_of: CONF:0000037 ! same type
+disjoint_from: CONF:0000007 ! multiple evidence lines of multiple experimental types
+
+[Term]
+id: CONF:0000007
+name: multiple evidence lines of multiple experimental types
+def: "A confidence from multiple evidence lines, using different types." [Bgee:draft]
+is_a: CONF:0000002 ! confidence from multiple evidence lines
+intersection_of: CONF:0000002 ! confidence from multiple evidence lines
+intersection_of: CONF:0000037 ! different type
+disjoint_from: CONF:0000006 ! multiple evidence lines of same type
+
+[Term]
+id: CONF:0000008
+name: congruent evidence lines of multiple experimental types
+def: "A confidence from multiple evidence lines, that are all congruent." [Bgee:draft]
+is_a: CONF:0000007 ! multiple evidence lines of multiple experimental types
+intersection_of: CONF:0000007 ! multiple evidence lines of multiple experimental types
+intersection_of: CONF:0000033 ! congruent
+disjoint_from: CONF:0000009 ! conflicting evidence lines of multiple experimental types
+
+[Term]
+id: CONF:0000009
+name: conflicting evidence lines of multiple experimental types
+def: "A confidence from multiple evidence lines, some of which being contradictory." [Bgee:draft]
+is_a: CONF:0000007 ! multiple evidence lines of multiple experimental types
+intersection_of: CONF:0000007 ! multiple evidence lines of multiple experimental types
+intersection_of: CONF:0000034 ! conflicting
+disjoint_from: CONF:0000008 ! congruent evidence lines of multiple experimental types
+
+[Term]
+id: CONF:0000010
+name: strongly conflicting evidence lines of multiple experimental types
+def: "Conflicting evidence lines of multiple experimental types in strong contradiction, meaning that the supporting evidence lines yield different conclusion, several of them being equally likely to be true." [Bgee:draft]
+is_a: CONF:0000009 ! Conflicting evidence lines of multiple experimental types
+intersection_of: CONF:0000009 ! Conflicting evidence lines of multiple experimental types
+intersection_of: CONF:0000035 ! strongly conflicting
+disjoint_from: CONF:0000011 ! weakly conflicting evidence lines of multiple experimental types
+
+[Term]
+id: CONF:0000011
+name: weakly conflicting evidence lines of multiple experimental types
+def: "Conflicting evidence lines in weak contradiction, meaning that the overall supported assertion is believed to be true, but a subset of less-reliable evidence lines are in contradiction." [Bgee:draft]
+is_a: CONF:0000009 ! Conflicting evidence lines of multiple experimental types
+intersection_of: CONF:0000009 ! Conflicting evidence lines of multiple experimental types
+intersection_of: CONF:0000036 ! weakly conflicting
+disjoint_from: CONF:0000010 ! strongly conflicting evidence lines of multiple experimental types
+
+[Term]
+id: CONF:0000012
+name: congruent evidence lines of multiple experimental types, best confidence high
+def: "Congruent evidence lines, the best supporting evidence being a highly reliable evidence." [Bgee:draft]
+is_a: CONF:0000008 ! Congruent evidence lines of multiple experimental types
+intersection_of: CONF:0000008 ! Congruent evidence lines of multiple experimental types
+intersection_of: CONF:0000029 ! high confidence level
+disjoint_from: CONF:0000013 ! congruent evidence lines of multiple experimental types, best confidence medium
+disjoint_from: CONF:0000014 ! congruent evidence lines of multiple experimental types, best confidence low
+
+[Term]
+id: CONF:0000013
+name: congruent evidence lines of multiple experimental types, best confidence medium
+def: "Congruent evidence lines, the best supporting evidence being a moderately trusted evidence." [Bgee:draft]
+is_a: CONF:0000008 ! Congruent evidence lines of multiple experimental types
+intersection_of: CONF:0000008 ! Congruent evidence lines of multiple experimental types
+intersection_of: CONF:0000030 ! medium confidence level
+disjoint_from: CONF:0000012 ! congruent evidence lines of multiple experimental types, best confidence high
+disjoint_from: CONF:0000014 ! congruent evidence lines of multiple experimental types, best confidence low
+
+[Term]
+id: CONF:0000014
+name: congruent evidence lines of multiple experimental types, best confidence low
+def: "Congruent evidence lines, the best supporting evidence being a not-trusted evidence." [Bgee:draft]
+is_a: CONF:0000008 ! Congruent evidence lines of multiple experimental types
+intersection_of: CONF:0000008 ! Congruent evidence lines of multiple experimental types
+intersection_of: CONF:0000031 ! low confidence level
+disjoint_from: CONF:0000012 ! congruent evidence lines of multiple experimental types, best confidence high
+disjoint_from: CONF:0000013 ! congruent evidence lines of multiple experimental types, best confidence medium
+
+[Term]
+id: CONF:0000015
+name: conflicting evidence lines of same type
+def: "Confidence from multiple evidence lines of same type, some of which being contradictory." [Bgee:draft]
+is_a: CONF:0000006 ! multiple evidence lines of same type
+intersection_of: CONF:0000006 ! multiple evidence lines of same type
+intersection_of: CONF:0000034 ! conflicting
+disjoint_from: CONF:0000016 ! congruent evidence lines of same type
+
+[Term]
+id: CONF:0000016
+name: congruent evidence lines of same type
+def: "Confidence from multiple evidence lines of same type, that are all congruent." [Bgee:draft]
+is_a: CONF:0000006 ! multiple evidence lines of same type
+intersection_of: CONF:0000006 ! multiple evidence lines of same type
+intersection_of: CONF:0000033 ! congruent
+disjoint_from: CONF:0000015 ! conflicting evidence lines of same type
+
+[Term]
+id: CONF:0000017
+name: congruent evidence lines of same type, best confidence high
+def: "Congruent evidence lines, the best supporting evidence being a highly reliable evidence." [Bgee:draft]
+is_a: CONF:0000016 ! Congruent evidence lines of same type
+intersection_of: CONF:0000016 ! Congruent evidence lines of same type
+intersection_of: CONF:0000029 ! high confidence level
+disjoint_from: CONF:0000018 ! congruent evidence lines of same type, best confidence low
+disjoint_from: CONF:0000019 ! congruent evidence lines of same type, best confidence medium
+
+[Term]
+id: CONF:0000018
+name: congruent evidence lines of same type, best confidence low
+def: "Congruent evidence lines, the best supporting evidence being a not-trusted evidence." [Bgee:draft]
+is_a: CONF:0000016 ! Congruent evidence lines of same type
+intersection_of: CONF:0000016 ! Congruent evidence lines of same type
+intersection_of: CONF:0000031 ! low confidence level
+disjoint_from: CONF:0000017 ! congruent evidence lines of same type, best confidence high
+disjoint_from: CONF:0000019 ! congruent evidence lines of same type, best confidence medium
+
+[Term]
+id: CONF:0000019
+name: congruent evidence lines of same type, best confidence medium
+def: "Congruent evidence lines, the best supporting evidence being a moderately trusted evidence." [Bgee:draft]
+is_a: CONF:0000016 ! Congruent evidence lines of same type
+intersection_of: CONF:0000016 ! Congruent evidence lines of same type
+intersection_of: CONF:0000030 ! medium confidence level
+disjoint_from: CONF:0000017 ! congruent evidence lines of same type, best confidence high
+disjoint_from: CONF:0000018 ! congruent evidence lines of same type, best confidence low
+
+[Term]
+id: CONF:0000020
+name: strongly conflicting evidence lines of same type
+def: "Conflicting evidence lines in strong contradiction, meaning that the supporting evidence lines yield different conclusion, several of them being equally likely to be true." [Bgee:draft]
+is_a: CONF:0000015 ! Conflicting evidence lines of same type
+intersection_of: CONF:0000015 ! Conflicting evidence lines of same type
+intersection_of: CONF:0000035 ! strongly conflicting
+disjoint_from: CONF:0000021 ! weakly conflicting evidence lines of same type
+
+[Term]
+id: CONF:0000021
+name: weakly conflicting evidence lines of same type
+def: "Conflicting evidence lines in weak contradiction, meaning that the overall supported assertion is believed to be true, but a subset of less-reliable evidence lines are in contradiction." [Bgee:draft]
+is_a: CONF:0000015 ! Conflicting evidence lines of same type
+intersection_of: CONF:0000015 ! Conflicting evidence lines of same type
+intersection_of: CONF:0000036 ! weakly conflicting
+disjoint_from: CONF:0000020 ! strongly conflicting evidence lines of same type
+
+[Term]
+id: CONF:0000022
+name: weakly conflicting evidence lines of same type, best confidence high
+def: "Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a highly reliable evidence." [Bgee:draft]
+is_a: CONF:0000021 ! weakly conflicting evidence lines of same type
+intersection_of: CONF:0000021 ! weakly conflicting evidence lines of same type
+intersection_of: CONF:0000029 ! high confidence level
+disjoint_from: CONF:0000023 ! weakly conflicting evidence lines of same type, best confidence low
+disjoint_from: CONF:0000024 ! weakly conflicting evidence lines of same type, best confidence medium
+
+[Term]
+id: CONF:0000023
+name: weakly conflicting evidence lines of same type, best confidence low
+def: "Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a not-trusted evidence." [Bgee:draft]
+is_a: CONF:0000021 ! weakly conflicting evidence lines of same type
+intersection_of: CONF:0000021 ! weakly conflicting evidence lines of same type
+intersection_of: CONF:0000031 ! low confidence level
+disjoint_from: CONF:0000022 ! weakly conflicting evidence lines of same type, best confidence high
+disjoint_from: CONF:0000024 ! weakly conflicting evidence lines of same type, best confidence medium
+
+[Term]
+id: CONF:0000024
+name: weakly conflicting evidence lines of same type, best confidence medium
+def: "Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a moderately trusted evidence." [Bgee:draft]
+is_a: CONF:0000021 ! weakly conflicting evidence lines of same type
+intersection_of: CONF:0000021 ! weakly conflicting evidence lines of same type
+intersection_of: CONF:0000030 ! medium confidence level
+disjoint_from: CONF:0000022 ! weakly conflicting evidence lines of same type, best confidence high
+disjoint_from: CONF:0000023 ! weakly conflicting evidence lines of same type, best confidence low
+
+[Term]
+id: CONF:0000025
+name: weakly conflicting evidence lines of multiple experimental types, best confidence high
+def: "Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a highly reliable evidence." [Bgee:draft]
+is_a: CONF:0000011 ! weakly conflicting evidence lines of multiple experimental types
+intersection_of: CONF:0000011 ! weakly conflicting evidence lines of multiple experimental types
+intersection_of: CONF:0000029 ! high confidence level
+disjoint_from: CONF:0000026 ! weakly conflicting evidence lines of multiple experimental types, best confidence low
+disjoint_from: CONF:0000027 ! weakly conflicting evidence lines of multiple experimental types, best confidence medium
+
+[Term]
+id: CONF:0000026
+name: weakly conflicting evidence lines of multiple experimental types, best confidence low
+def: "Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a not-trusted evidence." [Bgee:draft]
+is_a: CONF:0000011 ! weakly conflicting evidence lines of multiple experimental types
+intersection_of: CONF:0000011 ! weakly conflicting evidence lines of multiple experimental types
+intersection_of: CONF:0000031 ! low confidence level
+disjoint_from: CONF:0000025 ! weakly conflicting evidence lines of multiple experimental types, best confidence high
+disjoint_from: CONF:0000027 ! weakly conflicting evidence lines of multiple experimental types, best confidence medium
+
+[Term]
+id: CONF:0000027
+name: weakly conflicting evidence lines of multiple experimental types, best confidence medium
+def: "Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a moderately trusted evidence." [Bgee:draft]
+is_a: CONF:0000011 ! weakly conflicting evidence lines of multiple experimental types
+intersection_of: CONF:0000011 ! weakly conflicting evidence lines of multiple experimental types
+intersection_of: CONF:0000030 ! medium confidence level
+disjoint_from: CONF:0000025 ! weakly conflicting evidence lines of multiple experimental types, best confidence high
+disjoint_from: CONF:0000026 ! weakly conflicting evidence lines of multiple experimental types, best confidence low
