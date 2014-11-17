@@ -1,2 +1,1 @@
-Tracker of the Confidence Information Ontology (CIO)
-===============================
+Welcome to the repository of the Confidence Information Ontology (CIO)
