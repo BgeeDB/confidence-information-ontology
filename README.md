@@ -1,2 +1,2 @@
-confidence-information-ontology
+Tracker of the Confidence Information Ontology (CIO)
 ===============================
