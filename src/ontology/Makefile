@@ -13,7 +13,7 @@ release: cio.obo diff
 
 # all release files are derived from the editors version.
 # we use the default Oort setup (hermit as reasoner)
-cio.obo: cio-edit.obo
+cio.obo: cio-edit.owl
 	ontology-release-runner $< --allow-overwrite --asserted --simple
 
 # ----------------------------------------
@@ -21,7 +21,7 @@ cio.obo: cio-edit.obo
 # ----------------------------------------
 all_imports: imports/go_import.owl imports/pato_import.owl
 
-imports/%_import.owl: cio-edit.obo
+imports/%_import.owl: cio-edit.owl
 	owltools $< $(OBO)/$*.owl --add-imports-from-supports --extract-module -s $(OBO)/$*.owl -c --extract-mingraph  --set-ontology-id $(OBO)/go/extensions/$@ -o $@
 
 # ----------------------------------------
