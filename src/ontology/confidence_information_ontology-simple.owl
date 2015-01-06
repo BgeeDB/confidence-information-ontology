@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/confidence_information_ontology/confidence_information_ontology-simple.owl#"
      xml:base="http://purl.obolibrary.org/obo/confidence_information_ontology/confidence_information_ontology-simple.owl"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/confidence_information_ontology/confidence_information_ontology-simple.owl">
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.4</oboInOwl:hasOBOFormatVersion>
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/confidence_information_ontology/2014-11-17/confidence_information_ontology-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/confidence_information_ontology/2015-01-06/confidence_information_ontology-simple.owl"/>
     </owl:Ontology>
     
 
@@ -54,6 +54,12 @@
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_format_version</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     
 
 
@@ -140,7 +146,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000003">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high confidence assertion from single evidence</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high confidence from single evidence</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000001"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000029"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000004"/>
@@ -148,19 +154,19 @@
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000039"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information related to assertions supported by a highly reliable evidence.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000003</oboInOwl:id>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gold quality</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gold</oboInOwl:hasRelatedSynonym>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gold</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neXtProt</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000003"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information related to assertions supported by a highly reliable evidence.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000003"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gold quality</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neXtProt</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000003"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -168,26 +174,26 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000004">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medium confidence assertion from single evidence</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medium confidence from single evidence</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000001"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000030"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000005"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000039"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information related to assertions supported by a moderately trusted evidence.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information related to assertions supported by moderately trusted evidence.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000004</oboInOwl:id>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silver quality</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silver</oboInOwl:hasRelatedSynonym>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information related to assertions supported by a moderately trusted evidence.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neXtProt</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silver</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000004"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information related to assertions supported by moderately trusted evidence.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000004"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neXtProt</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silver quality</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000004"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -195,13 +201,13 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000005">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low confidence assertion from single evidence</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low confidence from single evidence</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000001"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000031"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000039"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information related to assertions supported by not-trusted evidence.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000005</oboInOwl:id>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bronze quality</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bronze</oboInOwl:hasRelatedSynonym>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information related to assertions supported by not-trusted evidence.</owl:annotatedTarget>
@@ -210,10 +216,10 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bronze quality</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bronze</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neXtProt</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000005"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -221,7 +227,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000006 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000006">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multiple evidence lines of same type</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from multiple evidence lines of same type</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000037"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000007"/>
@@ -240,7 +246,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000007">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multiple evidence lines of multiple types</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from multiple evidence lines of multiple types</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000002"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000038"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence from multiple evidence lines, using different types.</obo:IAO_0000115>
@@ -258,7 +264,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000008">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">congruent evidence lines of multiple types</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of multiple types</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000007"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000033"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000009"/>
@@ -277,7 +283,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000009">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conflicting evidence lines of multiple types</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from conflicting evidence lines of multiple types</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000007"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000034"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence from multiple evidence lines, some of which being contradictory.</obo:IAO_0000115>
@@ -295,7 +301,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000010">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">strongly conflicting evidence lines of multiple types</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from strongly conflicting evidence lines of multiple types</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000009"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000035"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000011"/>
@@ -314,7 +320,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000011">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weakly conflicting evidence lines of multiple types</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of multiple types</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000009"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000036"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000011</oboInOwl:id>
@@ -332,7 +338,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000012">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">congruent evidence lines of multiple types, best confidence high</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of multiple types, best confidence high</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000008"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000029"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000013"/>
@@ -352,7 +358,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000013">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">congruent evidence lines of multiple types, best confidence medium</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of multiple types, best confidence medium</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000008"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000030"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000014"/>
@@ -371,7 +377,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000014">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">congruent evidence lines of multiple types, best confidence low</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of multiple types, best confidence low</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000008"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000031"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000014</oboInOwl:id>
@@ -389,7 +395,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000015">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conflicting evidence lines of same type</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from conflicting evidence lines of same type</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000006"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000034"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000016"/>
@@ -408,7 +414,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000016">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">congruent evidence lines of same type</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of same type</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000006"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000033"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000016</oboInOwl:id>
@@ -426,7 +432,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000017">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">congruent evidence lines of same type, best confidence high</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of same type, best confidence high</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000016"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000029"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000018"/>
@@ -446,7 +452,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000018 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000018">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">congruent evidence lines of same type, best confidence low</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of same type, best confidence low</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000016"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000031"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000019"/>
@@ -465,7 +471,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000019">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">congruent evidence lines of same type, best confidence medium</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of same type, best confidence medium</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000016"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000030"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000019</oboInOwl:id>
@@ -483,7 +489,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000020">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">strongly conflicting evidence lines of same type</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from strongly conflicting evidence lines of same type</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000015"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000035"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000021"/>
@@ -502,7 +508,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000021 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000021">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weakly conflicting evidence lines of same type</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of same type</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000015"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000036"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000021</oboInOwl:id>
@@ -520,7 +526,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000022">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weakly conflicting evidence lines of same type, best confidence high</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of same type, best confidence high</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000021"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000029"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000023"/>
@@ -540,7 +546,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000023">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weakly conflicting evidence lines of same type, best confidence low</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of same type, best confidence low</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000021"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000031"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000024"/>
@@ -559,7 +565,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000024">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weakly conflicting evidence lines of same type, best confidence medium</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of same type, best confidence medium</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000021"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000030"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000024</oboInOwl:id>
@@ -577,7 +583,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000025">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weakly conflicting evidence lines of multiple types, best confidence high</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of multiple types, best confidence high</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000011"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000029"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000026"/>
@@ -597,7 +603,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000026">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weakly conflicting evidence lines of multiple types, best confidence low</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of multiple types, best confidence low</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000011"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000031"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000027"/>
@@ -616,7 +622,7 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000027">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">weakly conflicting evidence lines of multiple types, best confidence medium</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of multiple types, best confidence medium</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000011"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000030"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000027</oboInOwl:id>
@@ -831,7 +837,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information related to assertions that has been rejected, for instance, following paper retraction, author misinterpretation, or curator misinterpretation.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000039</oboInOwl:id>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When results are retracted, associated annotations are often removed. Consequently, end-users might not be aware that the result was annotated. Annotating an assertion with this confidence term allows to keep the information available. Such assertions should not infer with aggregation of multiple evidence lines to generate a confidence level from the branch CIO:0000002 &quot;confidence from multiple evidence lines&quot;. This is different from negative annotations, used to negate the interpretation of an annotation.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When results are retracted, associated annotations are often removed. Consequently, end-users might not be aware that the result was annotated. Annotating an assertion with this confidence term allows to keep the information available. Such assertions should not interfer with aggregation of multiple evidence lines to generate a confidence level from the branch CIO:0000002 &quot;confidence from multiple evidence lines&quot;. This is different from negative annotations, used to negate the interpretation of an annotation. It is also different from conflicting multiple evidence lines, where each single evidence has not been directly invalidated. Rejection is a stronger assertion about an annotation source than conflict, capturing that this evidence should no longer be used.</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information related to assertions that has been rejected, for instance, following paper retraction, author misinterpretation, or curator misinterpretation.</owl:annotatedTarget>
