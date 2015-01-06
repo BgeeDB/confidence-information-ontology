@@ -5,7 +5,8 @@ ontology: confidence_information_ontology
 [Term]
 id: CIO:0000000
 name: confidence information
-def: "An information about the confidence in an assertion." [Bgee:draft]
+def: "An information about the confidence in an assertion, meaning, an information about the level of certainty that an assertion is correct." [Bgee:draft]
+comment: Quality and confidence are distinct concepts: quality refers to the value of a source or of an annotation, whereas confidence refers to the level of certainty that an assertion is correct.
 
 [Term]
 id: CIO:0000001
