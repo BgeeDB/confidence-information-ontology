@@ -1487,7 +1487,7 @@
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000039</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A confidence information related to assertions that has been rejected, for instance, following paper retraction, author misinterpretation, or curator misinterpretation.</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A confidence information related to assertions that have been rejected, for instance, following paper retraction, author misinterpretation, or curator misinterpretation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>

@@ -322,7 +322,7 @@ is_a: CIO:0000032 ! evidence concordance
 [Term]
 id: CIO:0000039
 name: rejected
-def: "A confidence information related to assertions that has been rejected, for instance, following paper retraction, author misinterpretation, or curator misinterpretation." [Bgee:draft]
+def: "A confidence information related to assertions that have been rejected, for instance, following paper retraction, author misinterpretation, or curator misinterpretation." [Bgee:draft]
 comment: When results are retracted, associated annotations are often removed. Consequently, end-users might not be aware that the result was annotated. Annotating an assertion with this confidence term allows to keep the information available. Such assertions should not interfer with aggregation of multiple evidence lines to generate a confidence level from the branch CIO:0000002 "confidence from multiple evidence lines". This is different from negative annotations, used to negate the interpretation of an annotation. It is also different from conflicting multiple evidence lines, where each single evidence has not been directly invalidated. Rejection is a stronger assertion about an annotation source than conflict, capturing that this evidence should no longer be used.
 is_a: CIO:0000001 ! confidence from single evidence
 
