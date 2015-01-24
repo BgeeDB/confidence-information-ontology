@@ -1,0 +1,391 @@
+format-version: 1.2
+data-version: releases/2015-01-24
+ontology: confidence_information_ontology
+
+[Term]
+id: CIO:0000000
+name: confidence information statement
+def: "A statement providing information about the confidence in an assertion, meaning, an information about the level of certainty that an assertion is correct." [Bgee]
+comment: Quality and confidence are distinct concepts: quality refers to the value of a source or of an annotation, whereas confidence refers to the level of certainty that an assertion is correct.
+
+[Term]
+id: CIO:0000001
+name: confidence from single evidence
+def: "A confidence information about an assertion, defined from a single evidence." [Bgee:draft]
+is_a: CIO:0000000 ! confidence information statement
+is_a: CIO:0000042 ! single evidence
+intersection_of: CIO:0000000 ! confidence information statement
+intersection_of: CIO:0000042 ! single evidence
+disjoint_from: CIO:0000002 ! confidence from multiple evidence lines
+
+[Term]
+id: CIO:0000002
+name: confidence from multiple evidence lines
+def: "A confidence information about an assertion, defined from a set of evidence lines." [Bgee:draft]
+is_a: CIO:0000000 ! confidence information statement
+is_a: CIO:0000043 ! concordance of multiple evidence lines
+intersection_of: CIO:0000000 ! confidence information statement
+intersection_of: CIO:0000043 ! concordance of multiple evidence lines
+
+[Term]
+id: CIO:0000003
+name: high confidence from single evidence
+def: "A confidence information related to assertions supported by a highly reliable evidence." [Bgee:draft]
+synonym: "gold" RELATED [neXtProt]
+is_a: CIO:0000001 ! confidence from single evidence
+is_a: CIO:0000029 ! high confidence level
+intersection_of: CIO:0000001 ! confidence from single evidence
+intersection_of: CIO:0000029 ! high confidence level
+disjoint_from: CIO:0000004 ! medium confidence from single evidence
+disjoint_from: CIO:0000005 ! low confidence from single evidence
+disjoint_from: CIO:0000039 ! rejected
+
+[Term]
+id: CIO:0000004
+name: medium confidence from single evidence
+def: "A confidence information related to assertions supported by moderately trusted evidence." [Bgee:draft]
+synonym: "silver" RELATED [neXtProt]
+is_a: CIO:0000001 ! confidence from single evidence
+is_a: CIO:0000030 ! medium confidence level
+intersection_of: CIO:0000001 ! confidence from single evidence
+intersection_of: CIO:0000030 ! medium confidence level
+disjoint_from: CIO:0000005 ! low confidence from single evidence
+disjoint_from: CIO:0000039 ! rejected
+
+[Term]
+id: CIO:0000005
+name: low confidence from single evidence
+def: "A confidence information related to assertions supported by not-trusted evidence." [Bgee:draft]
+synonym: "bronze" RELATED [neXtProt]
+is_a: CIO:0000001 ! confidence from single evidence
+is_a: CIO:0000031 ! low confidence level
+intersection_of: CIO:0000001 ! confidence from single evidence
+intersection_of: CIO:0000031 ! low confidence level
+disjoint_from: CIO:0000039 ! rejected
+
+[Term]
+id: CIO:0000006
+name: confidence from multiple evidence lines of same type
+def: "A confidence from multiple evidence lines, all using a same type." [Bgee:draft]
+is_a: CIO:0000002 ! confidence from multiple evidence lines
+is_a: CIO:0000037 ! same type
+intersection_of: CIO:0000002 ! confidence from multiple evidence lines
+intersection_of: CIO:0000037 ! same type
+disjoint_from: CIO:0000007 ! confidence from multiple evidence lines of multiple types
+
+[Term]
+id: CIO:0000007
+name: confidence from multiple evidence lines of multiple types
+def: "A confidence from multiple evidence lines, using different types." [Bgee:draft]
+is_a: CIO:0000002 ! confidence from multiple evidence lines
+is_a: CIO:0000038 ! different type
+intersection_of: CIO:0000002 ! confidence from multiple evidence lines
+intersection_of: CIO:0000038 ! different type
+
+[Term]
+id: CIO:0000008
+name: confidence from congruent evidence lines of multiple types
+def: "A confidence from multiple evidence lines, that are all congruent." [Bgee:draft]
+is_a: CIO:0000007 ! confidence from multiple evidence lines of multiple types
+is_a: CIO:0000033 ! congruent
+intersection_of: CIO:0000007 ! confidence from multiple evidence lines of multiple types
+intersection_of: CIO:0000033 ! congruent
+disjoint_from: CIO:0000009 ! confidence from conflicting evidence lines of multiple types
+
+[Term]
+id: CIO:0000009
+name: confidence from conflicting evidence lines of multiple types
+def: "A confidence from multiple evidence lines, some of which being contradictory." [Bgee:draft]
+is_a: CIO:0000007 ! confidence from multiple evidence lines of multiple types
+is_a: CIO:0000034 ! conflicting
+intersection_of: CIO:0000007 ! confidence from multiple evidence lines of multiple types
+intersection_of: CIO:0000034 ! conflicting
+
+[Term]
+id: CIO:0000010
+name: confidence from strongly conflicting evidence lines of multiple types
+def: "Conflicting evidence lines of multiple types in strong contradiction, meaning that the supporting evidence lines yield different conclusion, several of them being equally likely to be true." [Bgee:draft]
+is_a: CIO:0000009 ! confidence from conflicting evidence lines of multiple types
+is_a: CIO:0000035 ! strongly conflicting
+intersection_of: CIO:0000009 ! confidence from conflicting evidence lines of multiple types
+intersection_of: CIO:0000035 ! strongly conflicting
+disjoint_from: CIO:0000011 ! confidence from weakly conflicting evidence lines of multiple types
+
+[Term]
+id: CIO:0000011
+name: confidence from weakly conflicting evidence lines of multiple types
+def: "Conflicting evidence lines in weak contradiction, meaning that the overall supported assertion is believed to be true, but a subset of less-reliable evidence lines are in contradiction." [Bgee:draft]
+is_a: CIO:0000009 ! confidence from conflicting evidence lines of multiple types
+is_a: CIO:0000036 ! weakly conflicting
+intersection_of: CIO:0000009 ! confidence from conflicting evidence lines of multiple types
+intersection_of: CIO:0000036 ! weakly conflicting
+
+[Term]
+id: CIO:0000012
+name: confidence from congruent evidence lines of multiple types, best confidence high
+def: "Congruent evidence lines, the best supporting evidence being a highly reliable evidence." [Bgee:draft]
+is_a: CIO:0000008 ! confidence from congruent evidence lines of multiple types
+is_a: CIO:0000029 ! high confidence level
+intersection_of: CIO:0000008 ! confidence from congruent evidence lines of multiple types
+intersection_of: CIO:0000029 ! high confidence level
+disjoint_from: CIO:0000013 ! confidence from congruent evidence lines of multiple types, best confidence medium
+disjoint_from: CIO:0000014 ! confidence from congruent evidence lines of multiple types, best confidence low
+
+[Term]
+id: CIO:0000013
+name: confidence from congruent evidence lines of multiple types, best confidence medium
+def: "Congruent evidence lines, the best supporting evidence being a moderately trusted evidence." [Bgee:draft]
+is_a: CIO:0000008 ! confidence from congruent evidence lines of multiple types
+is_a: CIO:0000030 ! medium confidence level
+intersection_of: CIO:0000008 ! confidence from congruent evidence lines of multiple types
+intersection_of: CIO:0000030 ! medium confidence level
+disjoint_from: CIO:0000014 ! confidence from congruent evidence lines of multiple types, best confidence low
+
+[Term]
+id: CIO:0000014
+name: confidence from congruent evidence lines of multiple types, best confidence low
+def: "Congruent evidence lines, the best supporting evidence being a not-trusted evidence." [Bgee:draft]
+is_a: CIO:0000008 ! confidence from congruent evidence lines of multiple types
+is_a: CIO:0000031 ! low confidence level
+intersection_of: CIO:0000008 ! confidence from congruent evidence lines of multiple types
+intersection_of: CIO:0000031 ! low confidence level
+
+[Term]
+id: CIO:0000015
+name: confidence from conflicting evidence lines of same type
+def: "Confidence from multiple evidence lines of same type, some of which being contradictory." [Bgee:draft]
+is_a: CIO:0000006 ! confidence from multiple evidence lines of same type
+is_a: CIO:0000034 ! conflicting
+intersection_of: CIO:0000006 ! confidence from multiple evidence lines of same type
+intersection_of: CIO:0000034 ! conflicting
+disjoint_from: CIO:0000016 ! confidence from congruent evidence lines of same type
+
+[Term]
+id: CIO:0000016
+name: confidence from congruent evidence lines of same type
+def: "Confidence from multiple evidence lines of same type, that are all congruent." [Bgee:draft]
+is_a: CIO:0000006 ! confidence from multiple evidence lines of same type
+is_a: CIO:0000033 ! congruent
+intersection_of: CIO:0000006 ! confidence from multiple evidence lines of same type
+intersection_of: CIO:0000033 ! congruent
+
+[Term]
+id: CIO:0000017
+name: confidence from congruent evidence lines of same type, best confidence high
+def: "Congruent evidence lines, the best supporting evidence being a highly reliable evidence." [Bgee:draft]
+is_a: CIO:0000016 ! confidence from congruent evidence lines of same type
+is_a: CIO:0000029 ! high confidence level
+intersection_of: CIO:0000016 ! confidence from congruent evidence lines of same type
+intersection_of: CIO:0000029 ! high confidence level
+disjoint_from: CIO:0000018 ! confidence from congruent evidence lines of same type, best confidence low
+disjoint_from: CIO:0000019 ! confidence from congruent evidence lines of same type, best confidence medium
+
+[Term]
+id: CIO:0000018
+name: confidence from congruent evidence lines of same type, best confidence low
+def: "Congruent evidence lines, the best supporting evidence being a not-trusted evidence." [Bgee:draft]
+is_a: CIO:0000016 ! confidence from congruent evidence lines of same type
+is_a: CIO:0000031 ! low confidence level
+intersection_of: CIO:0000016 ! confidence from congruent evidence lines of same type
+intersection_of: CIO:0000031 ! low confidence level
+disjoint_from: CIO:0000019 ! confidence from congruent evidence lines of same type, best confidence medium
+
+[Term]
+id: CIO:0000019
+name: confidence from congruent evidence lines of same type, best confidence medium
+def: "Congruent evidence lines, the best supporting evidence being a moderately trusted evidence." [Bgee:draft]
+is_a: CIO:0000016 ! confidence from congruent evidence lines of same type
+is_a: CIO:0000030 ! medium confidence level
+intersection_of: CIO:0000016 ! confidence from congruent evidence lines of same type
+intersection_of: CIO:0000030 ! medium confidence level
+
+[Term]
+id: CIO:0000020
+name: confidence from strongly conflicting evidence lines of same type
+def: "Conflicting evidence lines in strong contradiction, meaning that the supporting evidence lines yield different conclusion, several of them being equally likely to be true." [Bgee:draft]
+is_a: CIO:0000015 ! confidence from conflicting evidence lines of same type
+is_a: CIO:0000035 ! strongly conflicting
+intersection_of: CIO:0000015 ! confidence from conflicting evidence lines of same type
+intersection_of: CIO:0000035 ! strongly conflicting
+disjoint_from: CIO:0000021 ! confidence from weakly conflicting evidence lines of same type
+
+[Term]
+id: CIO:0000021
+name: confidence from weakly conflicting evidence lines of same type
+def: "Conflicting evidence lines in weak contradiction, meaning that the overall supported assertion is believed to be true, but a subset of less-reliable evidence lines are in contradiction." [Bgee:draft]
+is_a: CIO:0000015 ! confidence from conflicting evidence lines of same type
+is_a: CIO:0000036 ! weakly conflicting
+intersection_of: CIO:0000015 ! confidence from conflicting evidence lines of same type
+intersection_of: CIO:0000036 ! weakly conflicting
+
+[Term]
+id: CIO:0000022
+name: confidence from weakly conflicting evidence lines of same type, best confidence high
+def: "Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a highly reliable evidence." [Bgee:draft]
+is_a: CIO:0000021 ! confidence from weakly conflicting evidence lines of same type
+is_a: CIO:0000029 ! high confidence level
+intersection_of: CIO:0000021 ! confidence from weakly conflicting evidence lines of same type
+intersection_of: CIO:0000029 ! high confidence level
+disjoint_from: CIO:0000023 ! confidence from weakly conflicting evidence lines of same type, best confidence low
+disjoint_from: CIO:0000024 ! confidence from weakly conflicting evidence lines of same type, best confidence medium
+
+[Term]
+id: CIO:0000023
+name: confidence from weakly conflicting evidence lines of same type, best confidence low
+def: "Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a not-trusted evidence." [Bgee:draft]
+is_a: CIO:0000021 ! confidence from weakly conflicting evidence lines of same type
+is_a: CIO:0000031 ! low confidence level
+intersection_of: CIO:0000021 ! confidence from weakly conflicting evidence lines of same type
+intersection_of: CIO:0000031 ! low confidence level
+disjoint_from: CIO:0000024 ! confidence from weakly conflicting evidence lines of same type, best confidence medium
+
+[Term]
+id: CIO:0000024
+name: confidence from weakly conflicting evidence lines of same type, best confidence medium
+def: "Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a moderately trusted evidence." [Bgee:draft]
+is_a: CIO:0000021 ! confidence from weakly conflicting evidence lines of same type
+is_a: CIO:0000030 ! medium confidence level
+intersection_of: CIO:0000021 ! confidence from weakly conflicting evidence lines of same type
+intersection_of: CIO:0000030 ! medium confidence level
+
+[Term]
+id: CIO:0000025
+name: confidence from weakly conflicting evidence lines of multiple types, best confidence high
+def: "Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a highly reliable evidence." [Bgee:draft]
+is_a: CIO:0000011 ! confidence from weakly conflicting evidence lines of multiple types
+is_a: CIO:0000029 ! high confidence level
+intersection_of: CIO:0000011 ! confidence from weakly conflicting evidence lines of multiple types
+intersection_of: CIO:0000029 ! high confidence level
+disjoint_from: CIO:0000026 ! confidence from weakly conflicting evidence lines of multiple types, best confidence low
+disjoint_from: CIO:0000027 ! confidence from weakly conflicting evidence lines of multiple types, best confidence medium
+
+[Term]
+id: CIO:0000026
+name: confidence from weakly conflicting evidence lines of multiple types, best confidence low
+def: "Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a not-trusted evidence." [Bgee:draft]
+is_a: CIO:0000011 ! confidence from weakly conflicting evidence lines of multiple types
+is_a: CIO:0000031 ! low confidence level
+intersection_of: CIO:0000011 ! confidence from weakly conflicting evidence lines of multiple types
+intersection_of: CIO:0000031 ! low confidence level
+disjoint_from: CIO:0000027 ! confidence from weakly conflicting evidence lines of multiple types, best confidence medium
+
+[Term]
+id: CIO:0000027
+name: confidence from weakly conflicting evidence lines of multiple types, best confidence medium
+def: "Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a moderately trusted evidence." [Bgee:draft]
+is_a: CIO:0000011 ! confidence from weakly conflicting evidence lines of multiple types
+is_a: CIO:0000030 ! medium confidence level
+intersection_of: CIO:0000011 ! confidence from weakly conflicting evidence lines of multiple types
+intersection_of: CIO:0000030 ! medium confidence level
+
+[Term]
+id: CIO:0000028
+name: confidence level
+def: "A confidence information element representing the different levels of confidence, used to compose confidence information statements." [Bgee:draft]
+is_a: CIO:0000040 ! confidence information element
+
+[Term]
+id: CIO:0000029
+name: high confidence level
+def: "A confidence level representing a high trust in an evidence." [Bgee:draft]
+is_a: CIO:0000028 ! confidence level
+disjoint_from: CIO:0000030 ! medium confidence level
+disjoint_from: CIO:0000031 ! low confidence level
+
+[Term]
+id: CIO:0000030
+name: medium confidence level
+def: "A confidence level representing a moderate trust in an evidence." [Bgee:draft]
+is_a: CIO:0000028 ! confidence level
+disjoint_from: CIO:0000031 ! low confidence level
+
+[Term]
+id: CIO:0000031
+name: low confidence level
+def: "A confidence level representing an absence of trust in an evidence." [Bgee:draft]
+is_a: CIO:0000028 ! confidence level
+
+[Term]
+id: CIO:0000032
+name: evidence concordance
+def: "A confidence information element representing the type of concordance of evidence lines supporting an assertion, used to compose confidence information statements." [Bgee:draft]
+comment: Subclasses are used to define whether there is a single evidence, or multiple evidence lines, in support of an assertion, and whether they are congruent or conflicting.
+is_a: CIO:0000040 ! confidence information element
+
+[Term]
+id: CIO:0000033
+name: congruent
+def: "An evidence concordance of multiple evidence lines that are congruent." [Bgee:draft]
+comment: The assumption here is that assertions supported by a single evidence are less trustworthy than assertions supported by multiple evidence lines.
+is_a: CIO:0000043 ! concordance of multiple evidence lines
+disjoint_from: CIO:0000034 ! conflicting
+
+[Term]
+id: CIO:0000034
+name: conflicting
+def: "An evidence concordance of multiple evidence lines that are conflicting." [Bgee:draft]
+comment: An assertion can have several related evidence lines, some supporting the assertion, and some rejecting the assertion (e.g., using the NOT qualifier in GO annotations).
+is_a: CIO:0000043 ! concordance of multiple evidence lines
+
+[Term]
+id: CIO:0000035
+name: strongly conflicting
+def: "A conflicting concordance for evidence lines that are strongly conflicting." [Bgee:draft]
+comment: We distinguish two levels of conflict: weak conflict between evidence lines, e.g., a low confidence evidence negating an assertion, versus several high confidence evidence lines supporting the assertion; and strong conflict between evidence lines, e.g., two high confidence evidence lines contradicting each other. Note that strongly conflicting evidence lines are not used to produce confidence information statements associated to a confidence level (low, medium, high): in that case, the supported assertion is believed to need further validation, as evidence lines yield different conclusions of similar confidence.
+is_a: CIO:0000034 ! conflicting
+disjoint_from: CIO:0000036 ! weakly conflicting
+
+[Term]
+id: CIO:0000036
+name: weakly conflicting
+def: "A conflicting concordance for evidence lines that are weakly conflicting." [Bgee:draft]
+comment: We distinguish two levels of conflict: weak conflict between evidence lines, e.g., a low confidence evidence negating an assertion, versus several high confidence evidence lines supporting the assertion; and strong conflict between evidence lines, e.g., two high confidence evidence lines contradicting each other.
+is_a: CIO:0000034 ! conflicting
+
+[Term]
+id: CIO:0000037
+name: same type
+def: "An evidence type concordance for evidence lines that are from a same type." [Bgee:draft]
+is_a: CIO:0000041 ! evidence type concordance
+disjoint_from: CIO:0000038 ! different type
+
+[Term]
+id: CIO:0000038
+name: different type
+def: "An evidence type concordance for evidence lines that are from different types." [Bgee:draft]
+is_a: CIO:0000041 ! evidence type concordance
+
+[Term]
+id: CIO:0000039
+name: rejected
+def: "A confidence information related to assertions that have been rejected, for instance, following paper retraction, author misinterpretation, or curator misinterpretation." [Bgee:draft]
+comment: When results are retracted, associated annotations are often removed. Consequently, end-users might not be aware that the result was annotated. Annotating an assertion with this confidence term allows to keep the information available. Such assertions should not interfer with aggregation of multiple evidence lines to generate a confidence level from the branch CIO:0000002 "confidence from multiple evidence lines". This is different from negative annotations, used to negate the interpretation of an annotation. It is also different from conflicting multiple evidence lines, where each single evidence has not been directly invalidated. Rejection is a stronger assertion about an annotation source than conflict, capturing that this evidence should no longer be used.
+is_a: CIO:0000001 ! confidence from single evidence
+
+[Term]
+id: CIO:0000040
+name: confidence information element
+def: "A confidence information element allowing to compose confidence information statements." [Bgee]
+
+[Term]
+id: CIO:0000041
+name: evidence type concordance
+def: "A confidence information element representing the concordance of experimental or computational types of evidence lines supporting an assertion, used to compose confidence information statements." [Bgee]
+comment: The assumption here is that assertions supported by evidence lines of different experimental or computational types are more trustworthy than assertions supported by evidence lines of a same experimental or computational type.
+is_a: CIO:0000040 ! confidence information element
+
+[Term]
+id: CIO:0000042
+name: single evidence
+def: "An evidence concordance for confidence information about an assertion produced from a single evidence." [Bgee:draft]
+comment: The assumption here is that assertions supported by a single evidence are less trustworthy than assertions supported by multiple evidence lines.
+is_a: CIO:0000032 ! evidence concordance
+disjoint_from: CIO:0000043 ! concordance of multiple evidence lines
+
+[Term]
+id: CIO:0000043
+name: concordance of multiple evidence lines
+def: "An evidence concordance for confidence information about an assertion produced from multiple evidence lines." [Bgee:draft]
+comment: The assumption here is that assertions supported by a single evidence are less trustworthy than assertions supported by multiple evidence lines.
+is_a: CIO:0000032 ! evidence concordance
+
