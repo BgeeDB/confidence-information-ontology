@@ -9,7 +9,7 @@
      xmlns:obo="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/confidence_information_ontology.owl">
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.4</oboInOwl:hasOBOFormatVersion>
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/confidence_information_ontology/releases/2015-01-06/confidence_information_ontology.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/confidence_information_ontology/releases/2015-01-24/confidence_information_ontology.owl"/>
     </owl:Ontology>
     
 
@@ -95,14 +95,14 @@
     <!-- http://purl.obolibrary.org/obo/CIO_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000000">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence information</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An information about the confidence in an assertion, meaning, an information about the level of certainty that an assertion is correct.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence information statement</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A statement providing information about the confidence in an assertion, meaning, an information about the level of certainty that an assertion is correct.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000000</oboInOwl:id>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quality and confidence are distinct concepts: quality refers to the value of a source or of an annotation, whereas confidence refers to the level of certainty that an assertion is correct.</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An information about the confidence in an assertion, meaning, an information about the level of certainty that an assertion is correct.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A statement providing information about the confidence in an assertion, meaning, an information about the level of certainty that an assertion is correct.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bgee</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000000"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
     </owl:Axiom>
@@ -113,7 +113,16 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000001">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from single evidence</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000000"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000042"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000042"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000002"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information about an assertion, defined from a single evidence.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000001</oboInOwl:id>
@@ -131,7 +140,16 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000002">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from multiple evidence lines</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000000"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000043"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000043"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information about an assertion, defined from a set of evidence lines.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000002</oboInOwl:id>
     </owl:Class>
@@ -201,16 +219,16 @@
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silver</oboInOwl:hasRelatedSynonym>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information related to assertions supported by moderately trusted evidence.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000004"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neXtProt</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">silver</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000004"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information related to assertions supported by moderately trusted evidence.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000004"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
     </owl:Axiom>
     
 
@@ -235,16 +253,16 @@
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bronze</oboInOwl:hasRelatedSynonym>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bronze</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neXtProt</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000005"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information related to assertions supported by not-trusted evidence.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000005"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bronze</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">neXtProt</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000005"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -842,12 +860,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000028">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence level</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information representing the different levels of confidence, used to generate other confidence information terms.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000040"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information element representing the different levels of confidence, used to compose confidence information statements.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000028</oboInOwl:id>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information representing the different levels of confidence, used to generate other confidence information terms.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information element representing the different levels of confidence, used to compose confidence information statements.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000028"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -913,12 +931,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000032">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">evidence concordance</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000000"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information representing the concordance between several evidence lines, used to generate other confidence information terms.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000040"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information element representing the type of concordance of evidence lines supporting an assertion, used to compose confidence information statements.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000032</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subclasses are used to define whether there is a single evidence, or multiple evidence lines, in support of an assertion, and whether they are congruent or conflicting.</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information representing the concordance between several evidence lines, used to generate other confidence information terms.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information element representing the type of concordance of evidence lines supporting an assertion, used to compose confidence information statements.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000032"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -930,13 +949,14 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000033">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">congruent</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000032"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000043"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000034"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evidence concordance for evidence lines that are congruent.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evidence concordance of multiple evidence lines that are congruent.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000033</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The assumption here is that assertions supported by a single evidence are less trustworthy than assertions supported by multiple evidence lines.</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evidence concordance for evidence lines that are congruent.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evidence concordance of multiple evidence lines that are congruent.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000033"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -948,12 +968,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000034">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conflicting</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000032"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evidence concordance for evidence lines that are conflicting.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000043"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An assertion can have several related evidence lines, some supporting the assertion, and some rejecting the assertion (e.g., using the NOT qualifier in GO annotations).</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evidence concordance of multiple evidence lines that are conflicting.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000034</oboInOwl:id>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evidence concordance for evidence lines that are conflicting.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evidence concordance of multiple evidence lines that are conflicting.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000034"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -969,6 +990,7 @@
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000036"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A conflicting concordance for evidence lines that are strongly conflicting.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000035</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We distinguish two levels of conflict: weak conflict between evidence lines, e.g., a low confidence evidence negating an assertion, versus several high confidence evidence lines supporting the assertion; and strong conflict between evidence lines, e.g., two high confidence evidence lines contradicting each other. Note that strongly conflicting evidence lines are not used to produce confidence information statements associated to a confidence level (low, medium, high): in that case, the supported assertion is believed to need further validation, as evidence lines yield different conclusions of similar confidence.</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A conflicting concordance for evidence lines that are strongly conflicting.</owl:annotatedTarget>
@@ -986,6 +1008,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000034"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A conflicting concordance for evidence lines that are weakly conflicting.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000036</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We distinguish two levels of conflict: weak conflict between evidence lines, e.g., a low confidence evidence negating an assertion, versus several high confidence evidence lines supporting the assertion; and strong conflict between evidence lines, e.g., two high confidence evidence lines contradicting each other.</rdfs:comment>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A conflicting concordance for evidence lines that are weakly conflicting.</owl:annotatedTarget>
@@ -1000,13 +1023,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000037">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">same type</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000032"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000041"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000038"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evidence concordance for evidence lines that are from a same type.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evidence type concordance for evidence lines that are from a same type.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000037</oboInOwl:id>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evidence concordance for evidence lines that are from a same type.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evidence type concordance for evidence lines that are from a same type.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000037"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -1018,12 +1041,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000038">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">different type</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000032"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evidence concordance for evidence lines that are from different types.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000041"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evidence type concordance for evidence lines that are from different types.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000038</oboInOwl:id>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evidence concordance for evidence lines that are from different types.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evidence type concordance for evidence lines that are from different types.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000038"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -1044,6 +1067,77 @@
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information related to assertions that have been rejected, for instance, following paper retraction, author misinterpretation, or curator misinterpretation.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000039"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CIO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000040">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence information element</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information element allowing to compose confidence information statements.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000040</oboInOwl:id>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information element allowing to compose confidence information statements.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bgee</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000040"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CIO_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000041">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">evidence type concordance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000040"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information element representing the concordance of experimental or computational types of evidence lines supporting an assertion, used to compose confidence information statements.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000041</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The assumption here is that assertions supported by evidence lines of different experimental or computational types are more trustworthy than assertions supported by evidence lines of a same experimental or computational type.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information element representing the concordance of experimental or computational types of evidence lines supporting an assertion, used to compose confidence information statements.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bgee</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000041"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CIO_0000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000042">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single evidence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000032"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000043"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evidence concordance for confidence information about an assertion produced from a single evidence.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000042</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The assumption here is that assertions supported by a single evidence are less trustworthy than assertions supported by multiple evidence lines.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evidence concordance for confidence information about an assertion produced from a single evidence.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000042"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CIO_0000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000043">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">concordance of multiple evidence lines</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000032"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evidence concordance for confidence information about an assertion produced from multiple evidence lines.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000043</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The assumption here is that assertions supported by a single evidence are less trustworthy than assertions supported by multiple evidence lines.</rdfs:comment>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An evidence concordance for confidence information about an assertion produced from multiple evidence lines.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000043"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
     </owl:Axiom>
 </rdf:RDF>
