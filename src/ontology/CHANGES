@@ -1,5 +1,11 @@
 2015-01-24: 
-* clarify structure between 'confidence information elements' and 'confidence information statements'
-* add term 'evidence type concordance'
-* add several comments
+* Rename root class CIO:0000000 'confidence information' into 'confidence information statement'
+* add root class CIO:0000040 'confidence information element', to clarify the structure of the ontology and to distinguish between 'confidence information element' and 'confidence information statement': 'confidence information statement' are pre-composed terms using 'confidence information element'.
+* classes CIO:0000028 'confidence level' and CIO:0000032 'evidence concordance' are now subclasses of CIO:0000040 'confidence information element'.
+* add class CIO:0000041 'evidence type concordance', to capture whether evidence lines are of same or different experimental or computational types, independently from the class CIO:0000032 'evidence concordance' (whether evidence lines are congruent or conflicting). Subclass of CIO:0000040 'confidence information element' (as a result, CIO:0000040 'confidence information element' has now 3 subclasses: CIO:0000028 'confidence level, CIO:0000032 'evidence concordance', and CIO:0000041 'evidence type concordance').
+* classes CIO:0000037 'same type' and CIO:0000038 'different type' are no longer subclasses of CIO:0000032 'evidence concordance', but of CIO:0000041 'evidence type concordance'.
+* add classes CIO:0000042 'single evidence' and CIO:0000043 'concordance of multiple evidence lines', as subclasses of CIO:0000032 'evidence concordance'.
+* class CIO:0000001 'confidence from single evidence' is now the intersection of CIO:0000000 'confidence information statement' and CIO:0000042 'single evidence'.
+* class CIO:0000002 'confidence from multiple evidence lines' is now the intersection of CIO:0000000 'confidence information statement' and CIO:0000043 'concordance of multiple evidence lines'.
+* classes CIO:0000033 'congruent' and CIO:0000034 'conflicting' are no longer subclasses of CIO:0000032 'evidence concordance', but of CIO:0000043 'concordance of multiple evidence lines'.
         
