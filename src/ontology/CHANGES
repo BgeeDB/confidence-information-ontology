@@ -1,4 +1,4 @@
-2015-01-24: 
+2015-01-27: 
 * Add relation 'provides_greater_confidence_than'
 * Order confidence levels thanks to this relation.
 
