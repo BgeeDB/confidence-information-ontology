@@ -1,4 +1,8 @@
 2015-01-24: 
+* Add relation 'provides_greater_confidence_than'
+* Order confidence levels thanks to this relation.
+
+2015-01-24: 
 * Rename root class CIO:0000000 'confidence information' into 'confidence information statement'
 * add root class CIO:0000040 'confidence information element', to clarify the structure of the ontology and to distinguish between 'confidence information element' and 'confidence information statement': 'confidence information statement' are pre-composed terms using 'confidence information element'.
 * classes CIO:0000028 'confidence level' and CIO:0000032 'evidence concordance' are now subclasses of CIO:0000040 'confidence information element'.
