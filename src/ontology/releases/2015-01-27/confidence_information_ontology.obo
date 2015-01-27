@@ -395,4 +395,5 @@ is_a: CIO:0000032 ! evidence concordance
 id: provides_greater_confidence_than
 name: provides greater confidence than
 def: "X provides greater confidence than Y iff both X and Y provide a confidence information level, and the level of confidence provided by X is greater than the level of confidence provided by Y." []
+is_transitive: true
 

@@ -87,6 +87,7 @@
     <!-- http://purl.obolibrary.org/obo/CIOREL_0000001 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/CIOREL_0000001">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:label xml:lang="en">provides greater confidence than</rdfs:label>
         <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">provides_greater_confidence_than</oboInOwl:shorthand>
         <obo:IAO_0000115>X provides greater confidence than Y iff both X and Y provide a confidence information level, and the level of confidence provided by X is greater than the level of confidence provided by Y.</obo:IAO_0000115>
