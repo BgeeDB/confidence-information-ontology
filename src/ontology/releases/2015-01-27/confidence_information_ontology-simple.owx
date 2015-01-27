@@ -148,7 +148,7 @@
         <Class IRI="http://purl.obolibrary.org/obo/CIO_0000043"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/CIOREL_0000001"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/CIOREL_0000001"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
