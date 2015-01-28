@@ -1,0 +1,1864 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://purl.obolibrary.org/obo/confidence_information_ontology/confidence_information_ontology-simple.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://purl.obolibrary.org/obo/confidence_information_ontology/confidence_information_ontology-simple.owl"
+     versionIRI="http://purl.obolibrary.org/obo/confidence_information_ontology/2015-01-29/confidence_information_ontology-simple.owl">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.4</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000000"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000001"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000004"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000005"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000006"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000007"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000008"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000009"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000010"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000011"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000012"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000013"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000014"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000015"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000016"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000017"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000018"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000019"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000020"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000021"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000022"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000023"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000024"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000025"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000026"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000027"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000028"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000029"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000030"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000031"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000032"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000033"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000034"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000035"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000036"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000037"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000038"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000039"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000040"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000041"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000042"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000043"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_element"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/provides_greater_confidence_than"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000000"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_element"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000040"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000000"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000028"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000000"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000041"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000000"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000032"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000000"/>
+        <ObjectMaxCardinality cardinality="3">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_element"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000040"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000000"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000028"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000000"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000041"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000001"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000001"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000042"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000001"/>
+        <ObjectExactCardinality cardinality="0">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000041"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000002"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000000"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000002"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000043"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000002"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000041"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000003"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000003"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000029"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000004"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000004"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000030"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000005"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000005"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000031"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000006"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000006"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000037"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000007"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000007"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000038"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000008"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000008"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000033"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000009"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000009"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000034"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000010"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000010"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000035"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000010"/>
+        <ObjectExactCardinality cardinality="0">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000028"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000011"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000011"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000036"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000012"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000012"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000029"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000013"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000013"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000030"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000014"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000008"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000014"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000031"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000015"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000015"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000034"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000016"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000016"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000033"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000017"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000016"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000017"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000029"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000018"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000016"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000018"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000031"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000019"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000016"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000019"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000030"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000020"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000020"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000035"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000020"/>
+        <ObjectExactCardinality cardinality="0">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000028"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000021"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000021"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000036"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000022"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000021"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000022"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000029"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000023"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000021"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000023"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000031"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000024"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000021"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000024"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000030"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000025"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000025"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000029"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000026"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000026"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000031"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000027"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000027"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000030"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000028"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000029"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000028"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000029"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/provides_greater_confidence_than"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000030"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000030"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000028"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000030"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/provides_greater_confidence_than"/>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000031"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000031"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000028"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000032"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000033"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000043"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000034"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000043"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000035"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000036"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000034"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000037"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000041"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000038"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000041"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000039"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000041"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000042"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000032"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000043"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000032"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000000"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000040"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000001"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000002"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000003"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000004"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000003"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000005"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000003"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000039"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000004"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000005"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000004"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000039"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000005"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000039"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000006"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000007"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000008"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000009"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000010"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000011"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000012"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000013"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000012"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000014"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000013"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000014"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000015"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000016"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000017"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000018"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000017"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000019"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000018"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000019"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000020"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000021"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000022"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000023"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000022"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000024"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000023"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000024"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000025"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000026"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000025"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000027"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000026"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000027"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000028"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000032"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000028"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000041"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000029"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000030"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000029"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000031"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000030"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000031"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000032"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000041"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000033"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000034"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000035"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000036"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000037"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000038"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000042"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000043"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_element"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_element"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_element"/>
+    </SubObjectPropertyOf>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/provides_greater_confidence_than"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_element"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000000"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000000"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+                <ObjectComplementOf>
+                    <Class IRI="http://purl.obolibrary.org/obo/CIO_0000035"/>
+                </ObjectComplementOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000000"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://purl.obolibrary.org/obo/CIO_0000000"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+                <Class IRI="http://purl.obolibrary.org/obo/CIO_0000043"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/provides_greater_confidence_than"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000028"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_element"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000040"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_confidence_level"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000028"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000032"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000041"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/provides_greater_confidence_than"/>
+        <Class IRI="http://purl.obolibrary.org/obo/CIO_0000028"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000000</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A statement providing information about the confidence in an assertion, meaning, an information about the level of certainty that an assertion is correct.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000000</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000000</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000000</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Quality and confidence are distinct concepts: quality refers to the value of a source or of an annotation, whereas confidence refers to the level of certainty that an assertion is correct.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000000</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence information statement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000001</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A confidence information about an assertion, defined from a single evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000001</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000001</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000001</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from single evidence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000002</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A confidence information about an assertion, defined from a set of evidence lines.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000002</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000002</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from multiple evidence lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000003</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A confidence information related to assertions supported by a highly reliable evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">neXtProt</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000003</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">gold</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000003</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000003</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">high confidence from single evidence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000004</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A confidence information related to assertions supported by moderately trusted evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">neXtProt</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000004</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">silver</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000004</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000004</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">medium confidence from single evidence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000005</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A confidence information related to assertions supported by not-trusted evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">neXtProt</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000005</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">bronze</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000005</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000005</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000005</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">low confidence from single evidence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000006</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A confidence from multiple evidence lines, all using a same type.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000006</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000006</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000006</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from multiple evidence lines of same type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000007</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A confidence from multiple evidence lines, using different types.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000007</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000007</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000007</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from multiple evidence lines of multiple types</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000008</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A confidence from multiple evidence lines, that are all congruent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000008</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000008</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000008</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of multiple types</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000009</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A confidence from multiple evidence lines, some of which being contradictory.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000009</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000009</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000009</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from conflicting evidence lines of multiple types</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000010</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Conflicting evidence lines of multiple types in strong contradiction, meaning that the supporting evidence lines yield different conclusion, several of them being equally likely to be true.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000010</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000010</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000010</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from strongly conflicting evidence lines of multiple types</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000011</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Conflicting evidence lines in weak contradiction, meaning that the overall supported assertion is believed to be true, but a subset of less-reliable evidence lines are in contradiction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000011</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000011</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000011</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of multiple types</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000012</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Congruent evidence lines, the best supporting evidence being a highly reliable evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000012</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000012</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000012</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of multiple types, best confidence high</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000013</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Congruent evidence lines, the best supporting evidence being a moderately trusted evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000013</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000013</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000013</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of multiple types, best confidence medium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000014</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Congruent evidence lines, the best supporting evidence being a not-trusted evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000014</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000014</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000014</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of multiple types, best confidence low</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000015</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Confidence from multiple evidence lines of same type, some of which being contradictory.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000015</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000015</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000015</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from conflicting evidence lines of same type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000016</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Confidence from multiple evidence lines of same type, that are all congruent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000016</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000016</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000016</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of same type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000017</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Congruent evidence lines, the best supporting evidence being a highly reliable evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000017</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000017</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000017</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of same type, best confidence high</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000018</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Congruent evidence lines, the best supporting evidence being a not-trusted evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000018</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000018</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000018</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of same type, best confidence low</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000019</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Congruent evidence lines, the best supporting evidence being a moderately trusted evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000019</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000019</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000019</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of same type, best confidence medium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000020</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Conflicting evidence lines in strong contradiction, meaning that the supporting evidence lines yield different conclusion, several of them being equally likely to be true.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000020</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000020</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000020</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from strongly conflicting evidence lines of same type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000021</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Conflicting evidence lines in weak contradiction, meaning that the overall supported assertion is believed to be true, but a subset of less-reliable evidence lines are in contradiction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000021</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000021</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000021</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of same type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000022</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a highly reliable evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000022</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000022</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000022</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of same type, best confidence high</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000023</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a not-trusted evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000023</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000023</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000023</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of same type, best confidence low</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000024</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a moderately trusted evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000024</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000024</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000024</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of same type, best confidence medium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000025</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a highly reliable evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000025</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000025</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000025</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of multiple types, best confidence high</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000026</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a not-trusted evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000026</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000026</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000026</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of multiple types, best confidence low</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000027</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a moderately trusted evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000027</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000027</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000027</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of multiple types, best confidence medium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000028</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A confidence information element representing the different levels of confidence, used to compose confidence information statements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000028</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000028</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000028</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000029</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A confidence level representing a high trust in an evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000029</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000029</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000029</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">high confidence level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000030</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A confidence level representing a moderate trust in an evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000030</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000030</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000030</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">medium confidence level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000031</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A confidence level representing an absence of trust in an evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000031</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000031</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000031</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">low confidence level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000032</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A confidence information element representing the type of concordance of evidence lines supporting an assertion, used to compose confidence information statements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000032</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000032</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000032</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Subclasses are used to define whether there is a single evidence, or multiple evidence lines, in support of an assertion, and whether they are congruent or conflicting.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000032</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">evidence concordance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000033</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An evidence concordance of multiple evidence lines that are congruent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000033</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000033</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000033</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The assumption here is that assertions supported by a single evidence are less trustworthy than assertions supported by multiple evidence lines.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000033</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">congruent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000034</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An evidence concordance of multiple evidence lines that are conflicting.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000034</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000034</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000034</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An assertion can have several related evidence lines, some supporting the assertion, and some rejecting the assertion (e.g., using the NOT qualifier in GO annotations).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000034</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">conflicting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000035</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A conflicting concordance for evidence lines that are strongly conflicting.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000035</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000035</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000035</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">We distinguish two levels of conflict: weak conflict between evidence lines, e.g., a low confidence evidence negating an assertion, versus several high confidence evidence lines supporting the assertion; and strong conflict between evidence lines, e.g., two high confidence evidence lines contradicting each other. Note that strongly conflicting evidence lines are not used to produce confidence information statements associated to a confidence level (low, medium, high): in that case, the supported assertion is believed to need further validation, as evidence lines yield different conclusions of similar confidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000035</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">strongly conflicting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000036</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A conflicting concordance for evidence lines that are weakly conflicting.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000036</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000036</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000036</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">We distinguish two levels of conflict: weak conflict between evidence lines, e.g., a low confidence evidence negating an assertion, versus several high confidence evidence lines supporting the assertion; and strong conflict between evidence lines, e.g., two high confidence evidence lines contradicting each other.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000036</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">weakly conflicting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000037</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An evidence type concordance for evidence lines that are from a same type.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000037</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000037</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000037</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">same type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000038</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An evidence type concordance for evidence lines that are from different types.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000038</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000038</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000038</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">different type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000039</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A confidence information related to assertions that have been rejected, for instance, following paper retraction, author misinterpretation, or curator misinterpretation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000039</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000039</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000039</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">When results are retracted, associated annotations are often removed. Consequently, end-users might not be aware that the result was annotated. Annotating an assertion with this confidence term allows to keep the information available. Such assertions should not interfer with aggregation of multiple evidence lines to generate a confidence level from the branch CIO:0000002 &quot;confidence from multiple evidence lines&quot;. This is different from negative annotations, used to negate the interpretation of an annotation. It is also different from conflicting multiple evidence lines, where each single evidence has not been directly invalidated. Rejection is a stronger assertion about an annotation source than conflict, capturing that this evidence should no longer be used.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000039</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">rejected</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000040</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A confidence information element allowing to compose confidence information statements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000040</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000040</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000040</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">confidence information element</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000041</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A confidence information element representing the concordance of experimental or computational types of evidence lines supporting an assertion, used to compose confidence information statements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000041</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000041</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000041</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The assumption here is that assertions supported by evidence lines of different experimental or computational types are more trustworthy than assertions supported by evidence lines of a same experimental or computational type.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000041</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">evidence type concordance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000042</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An evidence concordance for confidence information about an assertion produced from a single evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000042</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000042</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000042</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The assumption here is that assertions supported by a single evidence are less trustworthy than assertions supported by multiple evidence lines.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000042</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">single evidence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:draft</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000043</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">An evidence concordance for confidence information about an assertion produced from multiple evidence lines.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#id"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000043</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">CIO:0000043</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000043</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The assumption here is that assertions supported by a single evidence are less trustworthy than assertions supported by multiple evidence lines.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/CIO_0000043</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">concordance of multiple evidence lines</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/IAO_0000115</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">definition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/has_confidence_element</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">X has confidence element Y iff X is a confidence information statement and Y is an associated confidence information element, used to define the statement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+        <IRI>http://purl.obolibrary.org/obo/has_confidence_element</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">has_confidence_element</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/has_confidence_element</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has confidence element</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/has_confidence_level</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">X has confidence level Y iff X is a confidence information statement and Y is it associated confidence information level.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+        <IRI>http://purl.obolibrary.org/obo/has_confidence_level</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">has_confidence_level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/has_confidence_level</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has confidence level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/has_evidence_concordance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">X has evidence concordance Y iff X is a confidence information statement and Y is it associated evidence concordance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+        <IRI>http://purl.obolibrary.org/obo/has_evidence_concordance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">has_evidence_concordance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/has_evidence_concordance</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has evidence concordance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/has_evidence_type_concordance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">X has evidence type concordance Y iff X is a confidence information statement and Y is it associated evidence type concordance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+        <IRI>http://purl.obolibrary.org/obo/has_evidence_type_concordance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">has_evidence_type_concordance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/has_evidence_type_concordance</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has evidence type concordance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/provides_greater_confidence_than</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">X provides greater confidence than Y iff both X and Y provide a confidence information level, and the level of confidence provided by X is greater than the level of confidence provided by Y.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+        <IRI>http://purl.obolibrary.org/obo/provides_greater_confidence_than</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">provides_greater_confidence_than</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/provides_greater_confidence_than</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">provides greater confidence than</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasDbXref</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasExactSynonym</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">has_obo_format_version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.geneontology.org/formats/oboInOwl#shorthand</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">shorthand</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 0.2.1-SNAPSHOT) http://owlapi.sourceforge.net -->
+
