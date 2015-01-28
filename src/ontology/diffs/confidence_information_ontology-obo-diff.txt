@@ -1,0 +1,105 @@
+confidence_information_ontology
+Ontology Comparison Report
+==========================
+
+Files used:
+- file 1 (old): confidence_information_ontology-lastbuild.obo; data version: releases/2015-01-27
+- file 2 (new): confidence_information_ontology.obo; data version: releases/2015-01-29
+
+NEW TERMS
+=========
+
+None
+
+
+OBSOLETIONS
+===========
+
+None
+
+
+TERM MERGES
+===========
+
+None
+
+
+TERM CHANGES
+============
+
+KEY:  'A' : added, 'D' : deleted, 'C' : changed
+
+Term ID	is_a	intersection_of	disjoint_from	relationship	
+CIO:0000000		7 A	1 A	7 A	
+CIO:0000001	1 D	1 D, 2 A		2 A	
+CIO:0000002	1 D	1 D, 2 A		2 A	
+CIO:0000003	1 D	1 D, 1 A		1 A	
+CIO:0000004	1 D	1 D, 1 A		1 A	
+CIO:0000005	1 D	1 D, 1 A		1 A	
+CIO:0000006	1 D	1 D, 1 A		1 A	
+CIO:0000007	1 D	1 D, 1 A		1 A	
+CIO:0000008	1 D	1 D, 1 A		1 A	
+CIO:0000009	1 D	1 D, 1 A		1 A	
+CIO:0000010	1 D	1 D, 2 A		2 A	
+CIO:0000011	1 D	1 D, 1 A		1 A	
+CIO:0000012	1 D	1 D, 1 A		1 A	
+CIO:0000013	1 D	1 D, 1 A		1 A	
+CIO:0000014	1 D	1 D, 1 A		1 A	
+CIO:0000015	1 D	1 D, 1 A		1 A	
+CIO:0000016	1 D	1 D, 1 A		1 A	
+CIO:0000017	1 D	1 D, 1 A		1 A	
+CIO:0000018	1 D	1 D, 1 A		1 A	
+CIO:0000019	1 D	1 D, 1 A		1 A	
+CIO:0000020	1 D	1 D, 2 A		2 A	
+CIO:0000021	1 D	1 D, 1 A		1 A	
+CIO:0000022	1 D	1 D, 1 A		1 A	
+CIO:0000023	1 D	1 D, 1 A		1 A	
+CIO:0000024	1 D	1 D, 1 A		1 A	
+CIO:0000025	1 D	1 D, 1 A		1 A	
+CIO:0000026	1 D	1 D, 1 A		1 A	
+CIO:0000027	1 D	1 D, 1 A		1 A	
+CIO:0000028			2 A		
+CIO:0000032			1 A		
+
+
+
+OTHER STANZA TYPES
+==================
+
+New Stanzas
+==========-
+
+Stanza type	ID	Name
+Typedef	has_confidence_element	has confidence element
+Typedef	has_confidence_level	has confidence level
+Typedef	has_evidence_concordance	has evidence concordance
+Typedef	has_evidence_type_concordance	has evidence type concordance
+
+
+
+Stanzas Edited
+==============
+
+Stanza type	ID	Name
+Typedef	provides_greater_confidence_than	provides greater confidence than
+
+
+
+FILE STATS
+==========
+
+Term counts for the old and new files
+
+Ontology	Old file	New file	Change
+unknown	44	44	
+	(44 defined)	(44 defined)	
+
+Obsolete	0	0	0
+	(0% of total)	 (0% of total)	(%)
+
+Totals	44	44	0 (0.0%)
+	44 (100.0%) defined	44 (100.0%) defined	
+	44 inc. obs	44 inc. obs
+
+
+
