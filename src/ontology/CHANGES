@@ -1,3 +1,7 @@
+2015-01-29:
+* Add relations 'has confidence element', 'has confidence level', 'has evidence concordance', and 'has evidence type concordance', to relate 'CI statements' to 'CI elements'
+* Add axioms to logically constrain the ontology
+
 2015-01-27: 
 * Add relation 'provides_greater_confidence_than'
 * Order confidence levels thanks to this relation.
