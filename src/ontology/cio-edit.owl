@@ -327,11 +327,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000040">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence information element</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information element allowing to compose confidence information statements.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence information element represent intrinsic properties of confidence information statements, allowing to compose them.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000040</oboInOwl:id>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information element allowing to compose confidence information statements.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence information element represent intrinsic properties of confidence information statements, allowing to compose them.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bgee</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CIO_0000040"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
