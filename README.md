@@ -5,5 +5,5 @@ The CIO is an attempt at providing an ontology to capture confidence information
 Documentation: see <a href='https://github.com/BgeeDB/confidence-information-ontology/wiki'>the wiki</a>.
 
 Ontology download: 
-* simple OBO version (recommended): <a href='https://raw.githubusercontent.com/BgeeDB/confidence-information-ontology/master/src/ontology/confidence_information_ontology-simple.obo'>CIO-simple.obo</a>
-* Complete OWL version: <a href='https://raw.githubusercontent.com/BgeeDB/confidence-information-ontology/master/src/ontology/confidence_information_ontology.owl'>CIO.owl</a>.
+* simple OBO version (recommended for annotators): <a href='https://raw.githubusercontent.com/BgeeDB/confidence-information-ontology/master/src/ontology/confidence_information_ontology-simple.obo'>CIO-simple.obo</a>
+* Complete OWL version (pre-reasonned): <a href='https://raw.githubusercontent.com/BgeeDB/confidence-information-ontology/master/src/ontology/confidence_information_ontology.owl'>CIO.owl</a>.
