@@ -1,6 +1,7 @@
 format-version: 1.2
 data-version: releases/2015-01-29
-ontology: confidence_information_ontology
+default-namespace: cio
+ontology: cio
 owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nEquivalentClasses(<http://purl.obolibrary.org/obo/CIO_0000000> ObjectUnionOf(ObjectIntersectionOf(ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/has_evidence_concordance> <http://purl.obolibrary.org/obo/CIO_0000043>) ObjectMinCardinality(2 <http://purl.obolibrary.org/obo/has_confidence_element> <http://purl.obolibrary.org/obo/CIO_0000040>) ObjectMinCardinality(0 <http://purl.obolibrary.org/obo/has_confidence_level> <http://purl.obolibrary.org/obo/CIO_0000028>) ObjectExactCardinality(1 <http://purl.obolibrary.org/obo/has_evidence_type_concordance> <http://purl.obolibrary.org/obo/CIO_0000041>) ObjectMaxCardinality(3 <http://purl.obolibrary.org/obo/has_confidence_element> <http://purl.obolibrary.org/obo/CIO_0000040>) ObjectMaxCardinality(1 <http://purl.obolibrary.org/obo/has_confidence_level> <http://purl.obolibrary.org/obo/CIO_0000028>)) ObjectIntersectionOf(ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/has_evidence_concordance> <http://purl.obolibrary.org/obo/CIO_0000042>) ObjectMinCardinality(1 <http://purl.obolibrary.org/obo/has_confidence_element> <http://purl.obolibrary.org/obo/CIO_0000040>) ObjectMinCardinality(0 <http://purl.obolibrary.org/obo/has_confidence_level> <http://purl.obolibrary.org/obo/CIO_0000028>) ObjectExactCardinality(0 <http://purl.obolibrary.org/obo/has_evidence_type_concordance> <http://purl.obolibrary.org/obo/CIO_0000041>) ObjectMaxCardinality(2 <http://purl.obolibrary.org/obo/has_confidence_element> <http://purl.obolibrary.org/obo/CIO_0000040>) ObjectMaxCardinality(1 <http://purl.obolibrary.org/obo/has_confidence_level> <http://purl.obolibrary.org/obo/CIO_0000028>))))\nObjectPropertyDomain(<http://purl.obolibrary.org/obo/has_confidence_level> ObjectIntersectionOf(ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/has_evidence_concordance> ObjectComplementOf(<http://purl.obolibrary.org/obo/CIO_0000035>)) <http://purl.obolibrary.org/obo/CIO_0000000>))\nObjectPropertyDomain(<http://purl.obolibrary.org/obo/has_evidence_type_concordance> ObjectIntersectionOf(ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/has_evidence_concordance> <http://purl.obolibrary.org/obo/CIO_0000043>) <http://purl.obolibrary.org/obo/CIO_0000000>))\n)
 
 [Term]
@@ -16,291 +17,226 @@ intersection_of: has_evidence_concordance CIO:0000032 {cardinality="1"} ! eviden
 intersection_of: has_evidence_type_concordance CIO:0000041 {minCardinality="0"} ! evidence type concordance
 intersection_of: has_evidence_type_concordance CIO:0000041 {maxCardinality="1"} ! evidence type concordance
 disjoint_from: CIO:0000040 ! confidence information element
-relationship: has_confidence_element CIO:0000040 {maxCardinality="3"} ! confidence information element
-relationship: has_confidence_element CIO:0000040 {minCardinality="1"} ! confidence information element
-relationship: has_confidence_level CIO:0000028 {maxCardinality="1"} ! confidence level
-relationship: has_confidence_level CIO:0000028 {minCardinality="0"} ! confidence level
-relationship: has_evidence_concordance CIO:0000032 {cardinality="1"} ! evidence concordance
-relationship: has_evidence_type_concordance CIO:0000041 {maxCardinality="1"} ! evidence type concordance
-relationship: has_evidence_type_concordance CIO:0000041 {minCardinality="0"} ! evidence type concordance
 
 [Term]
 id: CIO:0000001
 name: confidence from single evidence
 def: "A confidence information about an assertion, defined from a single evidence." [Bgee:draft]
-is_a: CIO:0000000 ! confidence information statement
 intersection_of: CIO:0000000 ! confidence information statement
 intersection_of: has_evidence_concordance CIO:0000042 {all_only="true"} ! single evidence
 intersection_of: has_evidence_type_concordance CIO:0000041 {cardinality="0"} ! evidence type concordance
 disjoint_from: CIO:0000002 ! confidence from multiple evidence lines
-relationship: has_evidence_concordance CIO:0000042 ! single evidence
-relationship: has_evidence_type_concordance CIO:0000041 {cardinality="0"} ! evidence type concordance
 
 [Term]
 id: CIO:0000002
 name: confidence from multiple evidence lines
 def: "A confidence information about an assertion, defined from a set of evidence lines." [Bgee:draft]
-is_a: CIO:0000000 ! confidence information statement
 intersection_of: CIO:0000000 ! confidence information statement
 intersection_of: has_evidence_concordance CIO:0000043 {all_only="true"} ! concordance of multiple evidence lines
 intersection_of: has_evidence_type_concordance CIO:0000041 {cardinality="1"} ! evidence type concordance
-relationship: has_evidence_concordance CIO:0000043 ! concordance of multiple evidence lines
-relationship: has_evidence_type_concordance CIO:0000041 {cardinality="1"} ! evidence type concordance
 
 [Term]
 id: CIO:0000003
 name: high confidence from single evidence
 def: "A confidence information related to assertions supported by a highly reliable evidence." [Bgee:draft]
 synonym: "gold" RELATED [neXtProt]
-is_a: CIO:0000001 ! confidence from single evidence
 intersection_of: CIO:0000001 ! confidence from single evidence
 intersection_of: has_confidence_level CIO:0000029 {all_only="true"} ! high confidence level
 disjoint_from: CIO:0000004 ! medium confidence from single evidence
 disjoint_from: CIO:0000005 ! low confidence from single evidence
 disjoint_from: CIO:0000039 ! rejected
-relationship: has_confidence_level CIO:0000029 ! high confidence level
 
 [Term]
 id: CIO:0000004
 name: medium confidence from single evidence
 def: "A confidence information related to assertions supported by moderately trusted evidence." [Bgee:draft]
 synonym: "silver" RELATED [neXtProt]
-is_a: CIO:0000001 ! confidence from single evidence
 intersection_of: CIO:0000001 ! confidence from single evidence
 intersection_of: has_confidence_level CIO:0000030 {all_only="true"} ! medium confidence level
 disjoint_from: CIO:0000005 ! low confidence from single evidence
 disjoint_from: CIO:0000039 ! rejected
-relationship: has_confidence_level CIO:0000030 ! medium confidence level
 
 [Term]
 id: CIO:0000005
 name: low confidence from single evidence
 def: "A confidence information related to assertions supported by not-trusted evidence." [Bgee:draft]
 synonym: "bronze" RELATED [neXtProt]
-is_a: CIO:0000001 ! confidence from single evidence
 intersection_of: CIO:0000001 ! confidence from single evidence
 intersection_of: has_confidence_level CIO:0000031 {all_only="true"} ! low confidence level
 disjoint_from: CIO:0000039 ! rejected
-relationship: has_confidence_level CIO:0000031 ! low confidence level
 
 [Term]
 id: CIO:0000006
 name: confidence from multiple evidence lines of same type
 def: "A confidence from multiple evidence lines, all using a same type." [Bgee:draft]
-is_a: CIO:0000002 ! confidence from multiple evidence lines
 intersection_of: CIO:0000002 ! confidence from multiple evidence lines
 intersection_of: has_evidence_type_concordance CIO:0000037 {all_only="true"} ! same type
 disjoint_from: CIO:0000007 ! confidence from multiple evidence lines of multiple types
-relationship: has_evidence_type_concordance CIO:0000037 ! same type
 
 [Term]
 id: CIO:0000007
 name: confidence from multiple evidence lines of multiple types
 def: "A confidence from multiple evidence lines, using different types." [Bgee:draft]
-is_a: CIO:0000002 ! confidence from multiple evidence lines
 intersection_of: CIO:0000002 ! confidence from multiple evidence lines
 intersection_of: has_evidence_type_concordance CIO:0000038 {all_only="true"} ! different type
-relationship: has_evidence_type_concordance CIO:0000038 ! different type
 
 [Term]
 id: CIO:0000008
 name: confidence from congruent evidence lines of multiple types
 def: "A confidence from multiple evidence lines, that are all congruent." [Bgee:draft]
-is_a: CIO:0000007 ! confidence from multiple evidence lines of multiple types
 intersection_of: CIO:0000007 ! confidence from multiple evidence lines of multiple types
 intersection_of: has_evidence_concordance CIO:0000033 {all_only="true"} ! congruent
 disjoint_from: CIO:0000009 ! confidence from conflicting evidence lines of multiple types
-relationship: has_evidence_concordance CIO:0000033 ! congruent
 
 [Term]
 id: CIO:0000009
 name: confidence from conflicting evidence lines of multiple types
 def: "A confidence from multiple evidence lines, some of which being contradictory." [Bgee:draft]
-is_a: CIO:0000007 ! confidence from multiple evidence lines of multiple types
 intersection_of: CIO:0000007 ! confidence from multiple evidence lines of multiple types
 intersection_of: has_evidence_concordance CIO:0000034 {all_only="true"} ! conflicting
-relationship: has_evidence_concordance CIO:0000034 ! conflicting
 
 [Term]
 id: CIO:0000010
 name: confidence from strongly conflicting evidence lines of multiple types
 def: "Conflicting evidence lines of multiple types in strong contradiction, meaning that the supporting evidence lines yield different conclusion, several of them being equally likely to be true." [Bgee:draft]
-is_a: CIO:0000009 ! confidence from conflicting evidence lines of multiple types
 intersection_of: CIO:0000009 ! confidence from conflicting evidence lines of multiple types
 intersection_of: has_confidence_level CIO:0000028 {cardinality="0"} ! confidence level
 intersection_of: has_evidence_concordance CIO:0000035 {all_only="true"} ! strongly conflicting
 disjoint_from: CIO:0000011 ! confidence from weakly conflicting evidence lines of multiple types
-relationship: has_confidence_level CIO:0000028 {cardinality="0"} ! confidence level
-relationship: has_evidence_concordance CIO:0000035 ! strongly conflicting
 
 [Term]
 id: CIO:0000011
 name: confidence from weakly conflicting evidence lines of multiple types
 def: "Conflicting evidence lines in weak contradiction, meaning that the overall supported assertion is believed to be true, but a subset of less-reliable evidence lines are in contradiction." [Bgee:draft]
-is_a: CIO:0000009 ! confidence from conflicting evidence lines of multiple types
 intersection_of: CIO:0000009 ! confidence from conflicting evidence lines of multiple types
 intersection_of: has_evidence_concordance CIO:0000036 {all_only="true"} ! weakly conflicting
-relationship: has_evidence_concordance CIO:0000036 ! weakly conflicting
 
 [Term]
 id: CIO:0000012
 name: confidence from congruent evidence lines of multiple types, best confidence high
 def: "Congruent evidence lines, the best supporting evidence being a highly reliable evidence." [Bgee:draft]
-is_a: CIO:0000008 ! confidence from congruent evidence lines of multiple types
 intersection_of: CIO:0000008 ! confidence from congruent evidence lines of multiple types
 intersection_of: has_confidence_level CIO:0000029 {all_only="true"} ! high confidence level
 disjoint_from: CIO:0000013 ! confidence from congruent evidence lines of multiple types, best confidence medium
 disjoint_from: CIO:0000014 ! confidence from congruent evidence lines of multiple types, best confidence low
-relationship: has_confidence_level CIO:0000029 ! high confidence level
 
 [Term]
 id: CIO:0000013
 name: confidence from congruent evidence lines of multiple types, best confidence medium
 def: "Congruent evidence lines, the best supporting evidence being a moderately trusted evidence." [Bgee:draft]
-is_a: CIO:0000008 ! confidence from congruent evidence lines of multiple types
 intersection_of: CIO:0000008 ! confidence from congruent evidence lines of multiple types
 intersection_of: has_confidence_level CIO:0000030 {all_only="true"} ! medium confidence level
 disjoint_from: CIO:0000014 ! confidence from congruent evidence lines of multiple types, best confidence low
-relationship: has_confidence_level CIO:0000030 ! medium confidence level
 
 [Term]
 id: CIO:0000014
 name: confidence from congruent evidence lines of multiple types, best confidence low
 def: "Congruent evidence lines, the best supporting evidence being a not-trusted evidence." [Bgee:draft]
-is_a: CIO:0000008 ! confidence from congruent evidence lines of multiple types
 intersection_of: CIO:0000008 ! confidence from congruent evidence lines of multiple types
 intersection_of: has_confidence_level CIO:0000031 {all_only="true"} ! low confidence level
-relationship: has_confidence_level CIO:0000031 ! low confidence level
 
 [Term]
 id: CIO:0000015
 name: confidence from conflicting evidence lines of same type
 def: "Confidence from multiple evidence lines of same type, some of which being contradictory." [Bgee:draft]
-is_a: CIO:0000006 ! confidence from multiple evidence lines of same type
 intersection_of: CIO:0000006 ! confidence from multiple evidence lines of same type
 intersection_of: has_evidence_concordance CIO:0000034 {all_only="true"} ! conflicting
 disjoint_from: CIO:0000016 ! confidence from congruent evidence lines of same type
-relationship: has_evidence_concordance CIO:0000034 ! conflicting
 
 [Term]
 id: CIO:0000016
 name: confidence from congruent evidence lines of same type
 def: "Confidence from multiple evidence lines of same type, that are all congruent." [Bgee:draft]
-is_a: CIO:0000006 ! confidence from multiple evidence lines of same type
 intersection_of: CIO:0000006 ! confidence from multiple evidence lines of same type
 intersection_of: has_evidence_concordance CIO:0000033 {all_only="true"} ! congruent
-relationship: has_evidence_concordance CIO:0000033 ! congruent
 
 [Term]
 id: CIO:0000017
 name: confidence from congruent evidence lines of same type, best confidence high
 def: "Congruent evidence lines, the best supporting evidence being a highly reliable evidence." [Bgee:draft]
-is_a: CIO:0000016 ! confidence from congruent evidence lines of same type
 intersection_of: CIO:0000016 ! confidence from congruent evidence lines of same type
 intersection_of: has_confidence_level CIO:0000029 {all_only="true"} ! high confidence level
 disjoint_from: CIO:0000018 ! confidence from congruent evidence lines of same type, best confidence low
 disjoint_from: CIO:0000019 ! confidence from congruent evidence lines of same type, best confidence medium
-relationship: has_confidence_level CIO:0000029 ! high confidence level
 
 [Term]
 id: CIO:0000018
 name: confidence from congruent evidence lines of same type, best confidence low
 def: "Congruent evidence lines, the best supporting evidence being a not-trusted evidence." [Bgee:draft]
-is_a: CIO:0000016 ! confidence from congruent evidence lines of same type
 intersection_of: CIO:0000016 ! confidence from congruent evidence lines of same type
 intersection_of: has_confidence_level CIO:0000031 {all_only="true"} ! low confidence level
 disjoint_from: CIO:0000019 ! confidence from congruent evidence lines of same type, best confidence medium
-relationship: has_confidence_level CIO:0000031 ! low confidence level
 
 [Term]
 id: CIO:0000019
 name: confidence from congruent evidence lines of same type, best confidence medium
 def: "Congruent evidence lines, the best supporting evidence being a moderately trusted evidence." [Bgee:draft]
-is_a: CIO:0000016 ! confidence from congruent evidence lines of same type
 intersection_of: CIO:0000016 ! confidence from congruent evidence lines of same type
 intersection_of: has_confidence_level CIO:0000030 {all_only="true"} ! medium confidence level
-relationship: has_confidence_level CIO:0000030 ! medium confidence level
 
 [Term]
 id: CIO:0000020
 name: confidence from strongly conflicting evidence lines of same type
 def: "Conflicting evidence lines in strong contradiction, meaning that the supporting evidence lines yield different conclusion, several of them being equally likely to be true." [Bgee:draft]
-is_a: CIO:0000015 ! confidence from conflicting evidence lines of same type
 intersection_of: CIO:0000015 ! confidence from conflicting evidence lines of same type
 intersection_of: has_confidence_level CIO:0000028 {cardinality="0"} ! confidence level
 intersection_of: has_evidence_concordance CIO:0000035 {all_only="true"} ! strongly conflicting
 disjoint_from: CIO:0000021 ! confidence from weakly conflicting evidence lines of same type
-relationship: has_confidence_level CIO:0000028 {cardinality="0"} ! confidence level
-relationship: has_evidence_concordance CIO:0000035 ! strongly conflicting
 
 [Term]
 id: CIO:0000021
 name: confidence from weakly conflicting evidence lines of same type
 def: "Conflicting evidence lines in weak contradiction, meaning that the overall supported assertion is believed to be true, but a subset of less-reliable evidence lines are in contradiction." [Bgee:draft]
-is_a: CIO:0000015 ! confidence from conflicting evidence lines of same type
 intersection_of: CIO:0000015 ! confidence from conflicting evidence lines of same type
 intersection_of: has_evidence_concordance CIO:0000036 {all_only="true"} ! weakly conflicting
-relationship: has_evidence_concordance CIO:0000036 ! weakly conflicting
 
 [Term]
 id: CIO:0000022
 name: confidence from weakly conflicting evidence lines of same type, best confidence high
 def: "Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a highly reliable evidence." [Bgee:draft]
-is_a: CIO:0000021 ! confidence from weakly conflicting evidence lines of same type
 intersection_of: CIO:0000021 ! confidence from weakly conflicting evidence lines of same type
 intersection_of: has_confidence_level CIO:0000029 {all_only="true"} ! high confidence level
 disjoint_from: CIO:0000023 ! confidence from weakly conflicting evidence lines of same type, best confidence low
 disjoint_from: CIO:0000024 ! confidence from weakly conflicting evidence lines of same type, best confidence medium
-relationship: has_confidence_level CIO:0000029 ! high confidence level
 
 [Term]
 id: CIO:0000023
 name: confidence from weakly conflicting evidence lines of same type, best confidence low
 def: "Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a not-trusted evidence." [Bgee:draft]
-is_a: CIO:0000021 ! confidence from weakly conflicting evidence lines of same type
 intersection_of: CIO:0000021 ! confidence from weakly conflicting evidence lines of same type
 intersection_of: has_confidence_level CIO:0000031 {all_only="true"} ! low confidence level
 disjoint_from: CIO:0000024 ! confidence from weakly conflicting evidence lines of same type, best confidence medium
-relationship: has_confidence_level CIO:0000031 ! low confidence level
 
 [Term]
 id: CIO:0000024
 name: confidence from weakly conflicting evidence lines of same type, best confidence medium
 def: "Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a moderately trusted evidence." [Bgee:draft]
-is_a: CIO:0000021 ! confidence from weakly conflicting evidence lines of same type
 intersection_of: CIO:0000021 ! confidence from weakly conflicting evidence lines of same type
 intersection_of: has_confidence_level CIO:0000030 {all_only="true"} ! medium confidence level
-relationship: has_confidence_level CIO:0000030 ! medium confidence level
 
 [Term]
 id: CIO:0000025
 name: confidence from weakly conflicting evidence lines of multiple types, best confidence high
 def: "Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a highly reliable evidence." [Bgee:draft]
-is_a: CIO:0000011 ! confidence from weakly conflicting evidence lines of multiple types
 intersection_of: CIO:0000011 ! confidence from weakly conflicting evidence lines of multiple types
 intersection_of: has_confidence_level CIO:0000029 {all_only="true"} ! high confidence level
 disjoint_from: CIO:0000026 ! confidence from weakly conflicting evidence lines of multiple types, best confidence low
 disjoint_from: CIO:0000027 ! confidence from weakly conflicting evidence lines of multiple types, best confidence medium
-relationship: has_confidence_level CIO:0000029 ! high confidence level
 
 [Term]
 id: CIO:0000026
 name: confidence from weakly conflicting evidence lines of multiple types, best confidence low
 def: "Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a not-trusted evidence." [Bgee:draft]
-is_a: CIO:0000011 ! confidence from weakly conflicting evidence lines of multiple types
 intersection_of: CIO:0000011 ! confidence from weakly conflicting evidence lines of multiple types
 intersection_of: has_confidence_level CIO:0000031 {all_only="true"} ! low confidence level
 disjoint_from: CIO:0000027 ! confidence from weakly conflicting evidence lines of multiple types, best confidence medium
-relationship: has_confidence_level CIO:0000031 ! low confidence level
 
 [Term]
 id: CIO:0000027
 name: confidence from weakly conflicting evidence lines of multiple types, best confidence medium
 def: "Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a moderately trusted evidence." [Bgee:draft]
-is_a: CIO:0000011 ! confidence from weakly conflicting evidence lines of multiple types
 intersection_of: CIO:0000011 ! confidence from weakly conflicting evidence lines of multiple types
 intersection_of: has_confidence_level CIO:0000030 {all_only="true"} ! medium confidence level
-relationship: has_confidence_level CIO:0000030 ! medium confidence level
 
 [Term]
 id: CIO:0000028

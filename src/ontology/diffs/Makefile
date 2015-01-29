@@ -1,7 +1,7 @@
 
 PERL_DIR:= ../../../tools/reporting/
 OBO=http://purl.obolibrary.org/obo
-ONT = confidence_information_ontology
+ONT = cio
 SRC = ../$(ONT).obo
 LAST = https://raw.githubusercontent.com/BgeeDB/confidence-information-ontology/master/src/ontology/$(ONT).obo
 

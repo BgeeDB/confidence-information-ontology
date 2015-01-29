@@ -1,15 +1,16 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/confidence_information_ontology/confidence_information_ontology-non-classified.owl#"
-     xml:base="http://purl.obolibrary.org/obo/confidence_information_ontology/confidence_information_ontology-non-classified.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/cio/cio-simple.owl#"
+     xml:base="http://purl.obolibrary.org/obo/cio/cio-simple.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/confidence_information_ontology/confidence_information_ontology-non-classified.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cio/cio-simple.owl">
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.4</oboInOwl:hasOBOFormatVersion>
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/confidence_information_ontology/2015-01-29/confidence_information_ontology-non-classified.owl"/>
+        <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cio</oboInOwl:default-namespace>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cio/2015-01-29/cio-simple.owl"/>
     </owl:Ontology>
     
 
@@ -203,119 +204,55 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000000">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence information statement</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_element"/>
-                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000040"/>
-                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000028"/>
-                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
-                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000041"/>
-                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
-                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000032"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_element"/>
-                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000040"/>
-                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:maxQualifiedCardinality>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000028"/>
-                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
-                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000041"/>
-                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
-                                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000042"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_element"/>
-                                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000040"/>
-                                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000028"/>
-                                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
-                                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000041"/>
-                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_element"/>
-                                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000040"/>
-                                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000028"/>
-                                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
-                                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000043"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_element"/>
-                                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000040"/>
-                                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000028"/>
-                                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
-                                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000041"/>
-                                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_element"/>
-                                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000040"/>
-                                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:maxQualifiedCardinality>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000028"/>
-                                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000041"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_element"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000040"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000041"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000028"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000028"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000032"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_element"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000040"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000040"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A statement providing information about the confidence in an assertion, meaning, an information about the level of certainty that an assertion is correct.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000000</oboInOwl:id>
@@ -334,22 +271,20 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000001">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from single evidence</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000000"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000042"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
-                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000041"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000042"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000041"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000002"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information about an assertion, defined from a single evidence.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000001</oboInOwl:id>
@@ -367,22 +302,20 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000002">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from multiple evidence lines</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000000"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000043"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
-                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000041"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000041"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000043"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information about an assertion, defined from a set of evidence lines.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000002</oboInOwl:id>
     </owl:Class>
@@ -399,17 +332,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000003">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">high confidence from single evidence</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000001"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000029"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000004"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000005"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000039"/>
@@ -436,17 +365,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000004">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">medium confidence from single evidence</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000001"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000030"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000005"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000039"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information related to assertions supported by moderately trusted evidence.</obo:IAO_0000115>
@@ -472,17 +397,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000005">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">low confidence from single evidence</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000001"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000031"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000039"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence information related to assertions supported by not-trusted evidence.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000005</oboInOwl:id>
@@ -507,17 +428,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000006">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from multiple evidence lines of same type</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000002"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000037"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000037"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000007"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence from multiple evidence lines, all using a same type.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000006</oboInOwl:id>
@@ -535,17 +452,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000007">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from multiple evidence lines of multiple types</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000002"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000038"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_type_concordance"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence from multiple evidence lines, using different types.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000007</oboInOwl:id>
     </owl:Class>
@@ -562,17 +475,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000008">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of multiple types</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000007"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000033"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000009"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence from multiple evidence lines, that are all congruent.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000008</oboInOwl:id>
@@ -590,17 +499,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000009">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from conflicting evidence lines of multiple types</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000007"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000034"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000007"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A confidence from multiple evidence lines, some of which being contradictory.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000009</oboInOwl:id>
     </owl:Class>
@@ -617,22 +522,20 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000010">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from strongly conflicting evidence lines of multiple types</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000009"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000035"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000028"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000028"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000011"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000010</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conflicting evidence lines of multiple types in strong contradiction, meaning that the supporting evidence lines yield different conclusion, several of them being equally likely to be true.</obo:IAO_0000115>
@@ -650,17 +553,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000011">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of multiple types</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000009"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000036"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000011</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conflicting evidence lines in weak contradiction, meaning that the overall supported assertion is believed to be true, but a subset of less-reliable evidence lines are in contradiction.</obo:IAO_0000115>
     </owl:Class>
@@ -677,17 +576,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000012">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of multiple types, best confidence high</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000008"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000029"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000013"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000014"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000012</oboInOwl:id>
@@ -706,17 +601,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000013">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of multiple types, best confidence medium</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000008"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000030"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000014"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000013</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Congruent evidence lines, the best supporting evidence being a moderately trusted evidence.</obo:IAO_0000115>
@@ -734,17 +625,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000014">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of multiple types, best confidence low</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000008"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000031"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000014</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Congruent evidence lines, the best supporting evidence being a not-trusted evidence.</obo:IAO_0000115>
     </owl:Class>
@@ -761,17 +648,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000015">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from conflicting evidence lines of same type</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000006"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000034"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000016"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000015</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence from multiple evidence lines of same type, some of which being contradictory.</obo:IAO_0000115>
@@ -789,17 +672,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000016">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of same type</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000006"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000033"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000016</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidence from multiple evidence lines of same type, that are all congruent.</obo:IAO_0000115>
     </owl:Class>
@@ -816,17 +695,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000017">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of same type, best confidence high</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000016"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000029"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000016"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000018"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000019"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000017</oboInOwl:id>
@@ -845,17 +720,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000018">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of same type, best confidence low</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000016"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000031"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000016"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000019"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000018</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Congruent evidence lines, the best supporting evidence being a not-trusted evidence.</obo:IAO_0000115>
@@ -873,17 +744,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000019">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from congruent evidence lines of same type, best confidence medium</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000016"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000030"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000016"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000019</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Congruent evidence lines, the best supporting evidence being a moderately trusted evidence.</obo:IAO_0000115>
     </owl:Class>
@@ -900,22 +767,20 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000020">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from strongly conflicting evidence lines of same type</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000015"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000035"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000028"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/CIO_0000028"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000021"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000020</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conflicting evidence lines in strong contradiction, meaning that the supporting evidence lines yield different conclusion, several of them being equally likely to be true.</obo:IAO_0000115>
@@ -933,17 +798,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000021">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of same type</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000015"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000036"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_evidence_concordance"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000021</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conflicting evidence lines in weak contradiction, meaning that the overall supported assertion is believed to be true, but a subset of less-reliable evidence lines are in contradiction.</obo:IAO_0000115>
     </owl:Class>
@@ -960,17 +821,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000022">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of same type, best confidence high</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000021"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000029"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000021"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000023"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000024"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000022</oboInOwl:id>
@@ -989,17 +846,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000023">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of same type, best confidence low</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000021"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000031"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000021"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000024"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000023</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a not-trusted evidence.</obo:IAO_0000115>
@@ -1017,17 +870,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000024">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of same type, best confidence medium</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000021"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000030"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000021"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000024</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a moderately trusted evidence.</obo:IAO_0000115>
     </owl:Class>
@@ -1044,17 +893,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000025">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of multiple types, best confidence high</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000011"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000029"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000026"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000027"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000025</oboInOwl:id>
@@ -1073,17 +918,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000026">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of multiple types, best confidence low</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000011"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000031"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/CIO_0000027"/>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000026</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a not-trusted evidence.</obo:IAO_0000115>
@@ -1101,17 +942,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CIO_0000027">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">confidence from weakly conflicting evidence lines of multiple types, best confidence medium</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CIO_0000011"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000030"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CIO_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/has_confidence_level"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CIO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CIO:0000027</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Weakly conflicting evidence lines, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a moderately trusted evidence.</obo:IAO_0000115>
     </owl:Class>

@@ -1,15 +1,16 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/confidence_information_ontology.owl#"
-     xml:base="http://purl.obolibrary.org/obo/confidence_information_ontology.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/cio.owl#"
+     xml:base="http://purl.obolibrary.org/obo/cio.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/confidence_information_ontology.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/cio.owl">
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.4</oboInOwl:hasOBOFormatVersion>
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/confidence_information_ontology/releases/2015-01-29/confidence_information_ontology.owl"/>
+        <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cio</oboInOwl:default-namespace>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/cio/releases/2015-01-29/cio.owl"/>
     </owl:Ontology>
     
 
