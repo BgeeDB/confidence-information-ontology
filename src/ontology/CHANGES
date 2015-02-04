@@ -1,3 +1,7 @@
+2015-02-04: 
+* update labels and definitions of statements from multiple evidence lines associated to a confidence level, to accomodate more use case (see issue #1)
+* Format dbxref of definitions according to OBO format
+
 2015-02-03:
 * improvement of some term labels, and of some definitions to better follow the genus differentia principle.
 
