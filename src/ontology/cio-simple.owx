@@ -850,7 +850,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000000</IRI>
@@ -874,7 +874,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000001</IRI>
@@ -893,7 +893,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000002</IRI>
@@ -912,7 +912,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000003</IRI>
@@ -940,7 +940,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000004</IRI>
@@ -968,7 +968,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000005</IRI>
@@ -996,7 +996,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000006</IRI>
@@ -1015,7 +1015,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000007</IRI>
@@ -1034,7 +1034,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000008</IRI>
@@ -1053,7 +1053,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000009</IRI>
@@ -1072,7 +1072,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000010</IRI>
@@ -1091,7 +1091,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000011</IRI>
@@ -1110,7 +1110,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000012</IRI>
@@ -1134,7 +1134,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000013</IRI>
@@ -1158,7 +1158,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000014</IRI>
@@ -1182,7 +1182,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000015</IRI>
@@ -1201,7 +1201,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000016</IRI>
@@ -1220,7 +1220,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000017</IRI>
@@ -1244,7 +1244,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000018</IRI>
@@ -1268,7 +1268,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000019</IRI>
@@ -1292,7 +1292,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000020</IRI>
@@ -1311,7 +1311,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000021</IRI>
@@ -1330,7 +1330,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000022</IRI>
@@ -1354,7 +1354,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000023</IRI>
@@ -1378,7 +1378,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000024</IRI>
@@ -1402,7 +1402,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000025</IRI>
@@ -1426,7 +1426,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000026</IRI>
@@ -1450,7 +1450,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000027</IRI>
@@ -1474,7 +1474,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000028</IRI>
@@ -1493,7 +1493,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000029</IRI>
@@ -1512,7 +1512,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000030</IRI>
@@ -1531,7 +1531,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000031</IRI>
@@ -1550,7 +1550,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000032</IRI>
@@ -1574,7 +1574,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000033</IRI>
@@ -1598,7 +1598,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000034</IRI>
@@ -1622,7 +1622,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000035</IRI>
@@ -1646,7 +1646,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000036</IRI>
@@ -1670,7 +1670,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000037</IRI>
@@ -1689,7 +1689,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000038</IRI>
@@ -1708,7 +1708,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000039</IRI>
@@ -1732,7 +1732,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000040</IRI>
@@ -1751,7 +1751,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000041</IRI>
@@ -1775,7 +1775,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000042</IRI>
@@ -1799,7 +1799,7 @@
     <AnnotationAssertion>
         <Annotation>
             <AnnotationProperty IRI="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee</Literal>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Bgee:fbb</Literal>
         </Annotation>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>http://purl.obolibrary.org/obo/CIO_0000043</IRI>
