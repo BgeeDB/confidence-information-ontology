@@ -1,0 +1,66 @@
+format-version: 1.2
+subsetdef: bgee_not_trusted "Terms that are considered not trusted by the Bgee team, related to assertions needing additional support."
+ontology: cio/subsets/bgee_not_trusted
+
+[Term]
+id: CIO:0000005
+name: low confidence from single evidence
+def: "A confidence statement from single evidence related to assertions supported by not-trusted evidence." [Bgee:fbb]
+subset: bgee_not_trusted
+synonym: "bronze" RELATED [neXtProt]
+
+[Term]
+id: CIO:0000010
+name: confidence statement from strongly conflicting evidence lines of multiple types
+def: "A confidence statement from conflicting evidence lines of multiple types, where evidence lines are in strong contradiction, meaning that the supporting evidence lines yield different conclusion, several of them being equally likely to be true." [Bgee:fbb]
+subset: bgee_not_trusted
+
+[Term]
+id: CIO:0000020
+name: confidence statement from strongly conflicting evidence lines of same type
+def: "Confidence statement from conflicting evidence lines of same type, where evidence lines are in strong contradiction, meaning that the supporting evidence lines yield different conclusion, several of them being equally likely to be true." [Bgee:fbb]
+subset: bgee_not_trusted
+
+[Term]
+id: CIO:0000023
+name: confidence statement from weakly conflicting evidence lines of same type, overall confidence low
+def: "Confidence statement from weakly conflicting evidence lines of same type, of an overall not-trusted confidence level." [Bgee:fbb]
+comment: Different strategies can be used to define the overall confidence level: for instance, it could be defined based on the confidence level of the most trusted evidence, from the set of evidence lines supporting (not contradicting) the assertion; or, it could be defined based on the number of evidence lines supporting the assertion (e.g., 10 congruent low-confidence evidence lines could allow to have an overall high confidence in an assertion, even if contradicted by one other low-confidence evidence). It is the responsibility of annotation teams to define and communicate the parameters, pertinent to their field, allowing to produce overall confidence levels.
+subset: bgee_not_trusted
+
+[Term]
+id: CIO:0000026
+name: confidence statement from weakly conflicting evidence lines of multiple types, overall confidence low
+def: "Confidence statement from weakly conflicting evidence lines of multiple types, of an overall not-trusted confidence level." [Bgee:fbb]
+comment: Different strategies can be used to define the overall confidence level: for instance, it could be defined based on the confidence level of the most trusted evidence, from the set of evidence lines supporting (not contradicting) the assertion; or, it could be defined based on the number of evidence lines supporting the assertion (e.g., 10 congruent low-confidence evidence lines could allow to have an overall high confidence in an assertion, even if contradicted by one other low-confidence evidence). It is the responsibility of annotation teams to define and communicate the parameters, pertinent to their field, allowing to produce overall confidence levels.
+subset: bgee_not_trusted
+
+[Typedef]
+id: has_confidence_element
+name: has confidence element
+def: "X has confidence element Y iff X is a confidence information statement and Y is an associated confidence information element, used to define the statement." []
+
+[Typedef]
+id: has_confidence_level
+name: has confidence level
+def: "X has confidence level Y iff X is a confidence information statement and Y is it associated confidence information level." []
+is_a: has_confidence_element ! has confidence element
+
+[Typedef]
+id: has_evidence_concordance
+name: has evidence concordance
+def: "X has evidence concordance Y iff X is a confidence information statement and Y is it associated evidence concordance." []
+is_a: has_confidence_element ! has confidence element
+
+[Typedef]
+id: has_evidence_type_concordance
+name: has evidence type concordance
+def: "X has evidence type concordance Y iff X is a confidence information statement and Y is it associated evidence type concordance." []
+is_a: has_confidence_element ! has confidence element
+
+[Typedef]
+id: provides_greater_confidence_than
+name: provides greater confidence than
+def: "X provides greater confidence than Y iff both X and Y provide a confidence information level, and the level of confidence provided by X is greater than the level of confidence provided by Y." []
+is_transitive: true
+

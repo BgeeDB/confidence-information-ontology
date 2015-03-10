@@ -3,8 +3,8 @@ Ontology Comparison Report
 ==========================
 
 Files used:
-- file 1 (old): cio-lastbuild.obo; data version: releases/2015-02-03
-- file 2 (new): cio.obo; data version: releases/2015-02-04
+- file 1 (old): cio-lastbuild.obo; data version: releases/2015-02-04
+- file 2 (new): cio.obo; data version: releases/2015-03-10
 
 NEW TERMS
 =========
@@ -29,51 +29,12 @@ TERM CHANGES
 
 KEY:  'A' : added, 'D' : deleted, 'C' : changed
 
-Term ID	name	def	comment	
-CIO:0000000				
-CIO:0000001				
-CIO:0000002				
-CIO:0000003				
-CIO:0000004				
-CIO:0000005				
-CIO:0000006				
-CIO:0000007				
-CIO:0000008				
-CIO:0000009				
-CIO:0000010				
-CIO:0000011				
-CIO:0000012	C	C	A	
-CIO:0000013	C	C	A	
-CIO:0000014	C	C	A	
-CIO:0000015				
-CIO:0000016				
-CIO:0000017	C	C	A	
-CIO:0000018	C	C	A	
-CIO:0000019	C	C	A	
-CIO:0000020				
-CIO:0000021				
-CIO:0000022	C	C	A	
-CIO:0000023	C	C	A	
-CIO:0000024	C	C	A	
-CIO:0000025	C	C	A	
-CIO:0000026	C	C	A	
-CIO:0000027	C	C	A	
-CIO:0000028				
-CIO:0000029				
-CIO:0000030				
-CIO:0000031				
-CIO:0000032				
-CIO:0000033				
-CIO:0000034				
-CIO:0000035				
-CIO:0000036				
-CIO:0000037				
-CIO:0000038				
-CIO:0000039				
-CIO:0000040				
-CIO:0000041				
-CIO:0000042				
-CIO:0000043				
+Term ID	subset	
+CIO:0000005	1 A	
+CIO:0000010	1 A	
+CIO:0000020	1 A	
+CIO:0000023	1 A	
+CIO:0000026	1 A	
 
 
 

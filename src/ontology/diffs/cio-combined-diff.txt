@@ -9,86 +9,14 @@
 ! Term ID : term name  ( total # annots / # direct annots)
 
 
-CIO:0000012 : confidence statement from congruent evidence lines of multiple types, overall confidence high   
-(was confidence statement from congruent evidence lines of multiple types, best confidence high)
-OLD: A confidence statement from congruent evidence lines of multiple types, the best supporting evidence being a highly reliable evidence.
-NEW: A confidence statement from congruent evidence lines of multiple types, of an overall high confidence level.
-
-
-CIO:0000013 : confidence statement from congruent evidence lines of multiple types, overall confidence medium   
-(was confidence statement from congruent evidence lines of multiple types, best confidence medium)
-OLD: A confidence statement from congruent evidence lines of multiple types, the best supporting evidence being a moderately trusted evidence.
-NEW: A confidence statement from congruent evidence lines of multiple types, of an overall moderately trusted confidence level.
-
-
-CIO:0000014 : confidence statement from congruent evidence lines of multiple types, overall confidence low   
-(was confidence statement from congruent evidence lines of multiple types, best confidence low)
-OLD: A confidence statement from congruent evidence lines of multiple types, the best supporting evidence being a not-trusted evidence.
-NEW: A confidence statement from congruent evidence lines of multiple types, of an overall not-trusted confidence level.
-
-
-CIO:0000017 : confidence statement from congruent evidence lines of same type, overall confidence high   
-(was confidence statement from congruent evidence lines of same type, best confidence high)
-OLD: A confidence statement from congruent evidence lines of same type, the best supporting evidence being a highly reliable evidence.
-NEW: A confidence statement from congruent evidence lines of same type, of an overall high confidence level.
-
-
-CIO:0000018 : confidence statement from congruent evidence lines of same type, overall confidence low   
-(was confidence statement from congruent evidence lines of same type, best confidence low)
-OLD: A confidence statement from congruent evidence lines of same type, the best supporting evidence being a not-trusted evidence.
-NEW: A confidence statement from congruent evidence lines of same type, of an overall not-trusted confidence level.
-
-
-CIO:0000019 : confidence statement from congruent evidence lines of same type, overall confidence medium   
-(was confidence statement from congruent evidence lines of same type, best confidence medium)
-OLD: A confidence statement from congruent evidence lines of same type, the best supporting evidence being a moderately trusted evidence.
-NEW: A confidence statement from congruent evidence lines of same type, of an overall moderately trusted confidence level.
-
-
-CIO:0000022 : confidence statement from weakly conflicting evidence lines of same type, overall confidence high   
-(was confidence statement from weakly conflicting evidence lines of same type, best confidence high)
-OLD: Confidence statement from weakly conflicting evidence lines of same type, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a highly reliable evidence.
-NEW: Confidence statement from weakly conflicting evidence lines of same type, of an overall high confidence level.
-
-
-CIO:0000023 : confidence statement from weakly conflicting evidence lines of same type, overall confidence low   
-(was confidence statement from weakly conflicting evidence lines of same type, best confidence low)
-OLD: Confidence statement from weakly conflicting evidence lines of same type, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a not-trusted evidence.
-NEW: Confidence statement from weakly conflicting evidence lines of same type, of an overall not-trusted confidence level.
-
-
-CIO:0000024 : confidence statement from weakly conflicting evidence lines of same type, overall confidence medium   
-(was confidence statement from weakly conflicting evidence lines of same type, best confidence medium)
-OLD: Confidence statement from weakly conflicting evidence lines of same type, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a moderately trusted evidence.
-NEW: Confidence statement from weakly conflicting evidence lines of same type, of an overall moderately trusted confidence level.
-
-
-CIO:0000025 : confidence statement from weakly conflicting evidence lines of multiple types, overall confidence high   
-(was confidence statement from weakly conflicting evidence lines of multiple types, best confidence high)
-OLD: Confidence statement from weakly conflicting evidence lines of multiple types, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a highly reliable evidence.
-NEW: Confidence statement from weakly conflicting evidence lines of multiple types, of an overall high confidence level.
-
-
-CIO:0000026 : confidence statement from weakly conflicting evidence lines of multiple types, overall confidence low   
-(was confidence statement from weakly conflicting evidence lines of multiple types, best confidence low)
-OLD: Confidence statement from weakly conflicting evidence lines of multiple types, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a not-trusted evidence.
-NEW: Confidence statement from weakly conflicting evidence lines of multiple types, of an overall not-trusted confidence level.
-
-
-CIO:0000027 : confidence statement from weakly conflicting evidence lines of multiple types, overall confidence medium   
-(was confidence statement from weakly conflicting evidence lines of multiple types, best confidence medium)
-OLD: Confidence statement from weakly conflicting evidence lines of multiple types, the best supporting evidence from the subset of evidence lines supporting the assertion (not in contradiction) being a moderately trusted evidence.
-NEW: Confidence statement from weakly conflicting evidence lines of multiple types, of an overall moderately trusted confidence level.
-
-
 
 cio
 Ontology Comparison Report
 ==========================
 
 Files used:
-- file 1 (old): cio-lastbuild.obo; data version: releases/2015-02-03
-- file 2 (new): cio.obo; data version: releases/2015-02-04
+- file 1 (old): cio-lastbuild.obo; data version: releases/2015-02-04
+- file 2 (new): cio.obo; data version: releases/2015-03-10
 
 NEW TERMS
 =========
@@ -113,51 +41,12 @@ TERM CHANGES
 
 KEY:  'A' : added, 'D' : deleted, 'C' : changed
 
-Term ID	name	def	comment	
-CIO:0000000				
-CIO:0000001				
-CIO:0000002				
-CIO:0000003				
-CIO:0000004				
-CIO:0000005				
-CIO:0000006				
-CIO:0000007				
-CIO:0000008				
-CIO:0000009				
-CIO:0000010				
-CIO:0000011				
-CIO:0000012	C	C	A	
-CIO:0000013	C	C	A	
-CIO:0000014	C	C	A	
-CIO:0000015				
-CIO:0000016				
-CIO:0000017	C	C	A	
-CIO:0000018	C	C	A	
-CIO:0000019	C	C	A	
-CIO:0000020				
-CIO:0000021				
-CIO:0000022	C	C	A	
-CIO:0000023	C	C	A	
-CIO:0000024	C	C	A	
-CIO:0000025	C	C	A	
-CIO:0000026	C	C	A	
-CIO:0000027	C	C	A	
-CIO:0000028				
-CIO:0000029				
-CIO:0000030				
-CIO:0000031				
-CIO:0000032				
-CIO:0000033				
-CIO:0000034				
-CIO:0000035				
-CIO:0000036				
-CIO:0000037				
-CIO:0000038				
-CIO:0000039				
-CIO:0000040				
-CIO:0000041				
-CIO:0000042				
-CIO:0000043				
+Term ID	subset	
+CIO:0000005	1 A	
+CIO:0000010	1 A	
+CIO:0000020	1 A	
+CIO:0000023	1 A	
+CIO:0000026	1 A	
 
 
 
