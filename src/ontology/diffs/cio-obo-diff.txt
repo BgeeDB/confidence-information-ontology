@@ -3,7 +3,7 @@ Ontology Comparison Report
 ==========================
 
 Files used:
-- file 1 (old): cio-lastbuild.obo; data version: releases/2015-02-04
+- file 1 (old): cio-lastbuild.obo; data version: releases/2015-03-10
 - file 2 (new): cio.obo; data version: releases/2015-03-10
 
 NEW TERMS
@@ -27,14 +27,7 @@ None
 TERM CHANGES
 ============
 
-KEY:  'A' : added, 'D' : deleted, 'C' : changed
-
-Term ID	subset	
-CIO:0000005	1 A	
-CIO:0000010	1 A	
-CIO:0000020	1 A	
-CIO:0000023	1 A	
-CIO:0000026	1 A	
+None
 
 
 
@@ -44,15 +37,13 @@ FILE STATS
 Term counts for the old and new files
 
 Ontology	Old file	New file	Change
-cio	44	44	
-	(44 defined)	(44 defined)	
 
-Obsolete	0	0	0
-	(0% of total)	 (0% of total)	(%)
+Obsolete			
+	(% of total)	 (% of total)	(%)
 
-Totals	44	44	0 (0.0%)
-	44 (100.0%) defined	44 (100.0%) defined	
-	44 inc. obs	44 inc. obs
+Totals			 (%)
+	 (%) defined	 (%) defined	
+	 inc. obs	 inc. obs
 
 
 
