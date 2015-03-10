@@ -1,3 +1,6 @@
+2015-03-10: 
+* add subset 'bgee_not_trusted'
+
 2015-02-04: 
 * update labels and definitions of statements from multiple evidence lines associated to a confidence level, to accomodate more use case (see issue #1)
 * Format dbxref of definitions according to OBO format
